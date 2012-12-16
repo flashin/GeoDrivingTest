@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mainbg"
+    android:id="@+id/signs_table"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<ImageView
+    android:id="@+id/signicon"
+    android:layout_width="100dp"
+    android:layout_height="75dp"
+    android:layout_weight="1"
+    />
+<TextView
+    style="@style/signfulltitle"
+    android:id="@+id/signlabel"
+    android:layout_width="fill_parent" 
+    android:layout_height="75dp"
+    android:layout_weight="2"
+    android:gravity="center_vertical"
+    />
+</LinearLayout>

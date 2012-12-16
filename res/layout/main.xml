@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/roadbg"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<ImageView
+    style="@style/mainroadimg"
+    android:id="@+id/main_road"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:scaleType="fitXY"
+    android:src="@raw/mainroad"
+    />
+<ImageButton
+    style="@style/mainbutton"
+    android:id="@+id/button_test"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:focusable="true"
+    android:layout_below="@id/main_road"
+    android:src="@raw/button_test"
+    android:background="@null"
+    android:scaleType="fitXY"
+    android:onClick="gotoExam"
+    />
+<ImageButton
+    style="@style/mainbutton"
+    android:id="@+id/button_signs"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:focusable="true"
+    android:layout_below="@id/button_test"
+    android:src="@raw/button_signs"
+    android:background="@null"
+    android:scaleType="fitXY"
+    android:onClick="gotoSignsList"
+    />
+<ImageButton
+    style="@style/mainbutton"
+    android:id="@+id/button_laws"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:focusable="true"
+    android:layout_below="@id/button_signs"
+    android:src="@raw/button_laws"
+    android:background="@null"
+    android:scaleType="fitXY"
+    android:onClick="gotoLaws"
+    />
+</RelativeLayout>
+

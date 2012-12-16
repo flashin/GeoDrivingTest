@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Theory Test Geo</string>
+    <string name="exam_name">sagamocdo kiTxvari</string>
+    <string name="signslist_name">sagzao niSnebi</string>
+    <string name="main_title">sagamocdo testebi mZRolebisTvis</string>
+    <string name="button_test">testireba</string>
+    <string name="button_signs">sagzao niSnebi</string>
+    <string name="button_laws">kanonmdebloba</string>
+    <string name="dro_text">dro: </string>
+    <string name="question_n">kiTxva </string>
+    <string name="correct_n">swori pasuxebi:</string>
+    <string name="mistakes_n">mcdari pasuxebi:</string>
+    <string name="answer_is"> swori pasuxia:</string>
+    <string name="full_answer">pasuxi vrclad</string>
+    <string name="goto_main">mTavari</string>
+    <string name="but_close_alert_dia">daxurva</string>
+    <string name="but_forward">win</string>
+    <string name="exam_success">Tqven warmatebiT CaabareT gamocda</string>
+    <string name="exam_failure">Tqveni gamocda dasrulda warumateblad, gamocdis Casabareblad 30 wuTSi sworad unda gepasuxaT 27 SekiTxvisTvis mainc</string>
+    <string name="full_answer_desc">pasuxi kiTxvaze</string>
+    <string name="but_try_again">daiwye Tavidan</string>
+</resources>

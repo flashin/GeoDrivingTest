@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mainbg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="horizontal|vertical"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_bar"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    >
+<TextView  
+    style="@style/topexam"
+    android:id="@+id/test_timer"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:text="00:00:00"
+    />
+<TextView  
+    style="@style/topexam"
+    android:id="@+id/question_n_label"
+    android:layout_width="wrap_content" 
+    android:layout_height="20sp"
+    android:gravity="center_vertical"
+    android:layout_below="@id/test_timer"
+    android:text="@string/question_n"
+    />
+<TextView  
+    style="@style/topexam"
+    android:id="@+id/question_n_value"
+    android:layout_width="wrap_content" 
+    android:layout_height="20sp"
+    android:gravity="center_vertical"
+    android:layout_toRightOf="@id/question_n_label"
+    android:layout_below="@id/test_timer"
+    android:text="(0/0)"
+    />
+</RelativeLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    >
+<TextView  
+    style="@style/topexam"
+    android:id="@+id/correct_n_label"
+    android:layout_width="wrap_content" 
+    android:layout_height="20sp"
+    android:gravity="center_vertical"
+    android:text="@string/correct_n"
+    />
+<TextView  
+    style="@style/topexam"
+    android:id="@+id/correct_n_value"
+    android:layout_width="wrap_content" 
+    android:layout_height="20sp"
+    android:gravity="center_vertical|left"
+    android:layout_toRightOf="@id/correct_n_label"
+    android:text="0"
+    />
+<TextView  
+    style="@style/topexam"
+    android:id="@+id/mistakes_n_label"
+    android:layout_width="wrap_content" 
+    android:layout_height="20sp"
+    android:gravity="center_vertical"
+    android:layout_below="@id/correct_n_label"
+    android:text="@string/mistakes_n"
+    />
+<TextView  
+    style="@style/topexam"
+    android:id="@+id/mistakes_n_value"
+    android:layout_width="wrap_content" 
+    android:layout_height="20sp"
+    android:gravity="center_vertical|left"
+    android:layout_toRightOf="@id/mistakes_n_label"
+    android:layout_below="@id/correct_n_value"
+    android:text="0"
+    />
+</RelativeLayout>
+</LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/image_place"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/top_bar"
+    android:layout_gravity="center_vertical|center_horizontal"
+    >
+</LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/buttons_place"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/image_place"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:paddingTop="5sp"
+    >
+</LinearLayout>
+</RelativeLayout>
+</ScrollView>

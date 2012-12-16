@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.gedevanishvili.driving"
+      android:versionCode="11"
+      android:versionName="2.3.2">
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="8" />
+    <application android:label="@string/app_name" android:icon="@raw/small_icon">
+        <activity android:name="GeoDrivingTest"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/CustomTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="GeoDrivingExam"
+                  android:label="@string/exam_name"
+                  android:theme="@style/CustomTheme2"
+                  android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.EXAM" />
+            </intent-filter>
+        </activity>
+        <activity android:name="GeoDrivingSignsList"
+                  android:label="@string/signslist_name"
+                  android:theme="@style/CustomTheme2"
+                  android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.SIGNSLIST" />
+            </intent-filter>
+        </activity>
+        <activity android:name="GeoDrivingSignsFull"
+                  android:label="@string/signslist_name"
+                  android:theme="@style/CustomTheme2"
+                  android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.SIGNSFULL" />
+            </intent-filter>
+        </activity>
+        <activity android:name="GeoDrivingLaws"
+                  android:label="@string/button_laws"
+                  android:theme="@style/CustomTheme2"
+                  android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.LAWS" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest> 
