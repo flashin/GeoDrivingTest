@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mainbg"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView
+    style="@style/test_menu_title"
+    android:id="@+id/type_1_but"
+    android:text="@string/exam_type_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:onClick="gotoExam"
+    />
+<TextView
+    style="@style/test_menu_desc"
+    android:id="@+id/type_1_desc"
+    android:text="@string/exam_desc_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:onClick="gotoExam"
+    />
+<TextView
+    style="@style/test_menu_title"
+    android:id="@+id/type_2_but"
+    android:text="@string/exam_type_2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:onClick="gotoTestCats"
+    />
+<TextView
+    style="@style/test_menu_desc"
+    android:id="@+id/type_2_desc"
+    android:text="@string/exam_desc_2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:onClick="gotoTestCats"
+    />
+</LinearLayout>

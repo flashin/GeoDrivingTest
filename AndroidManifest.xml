@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="com.gedevanishvili.driving"
-      android:versionCode="11"
-      android:versionName="2.3.2">
+      android:versionCode="13"
+      android:versionName="3.1">
     <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="8" />
     <application android:label="@string/app_name" android:icon="@raw/small_icon">
         <activity android:name="GeoDrivingTest"
@@ -14,12 +14,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="GeoDrivingTestMenu"
+                  android:label="@string/button_test"
+                  android:theme="@style/CustomTheme2"
+                  android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.EXAM_MENU" />
+            </intent-filter>
+        </activity>
         <activity android:name="GeoDrivingExam"
                   android:label="@string/exam_name"
                   android:theme="@style/CustomTheme2"
                   android:configChanges="orientation">
             <intent-filter>
                 <action android:name="android.intent.action.EXAM" />
+            </intent-filter>
+        </activity>
+        <activity android:name="GeoDrivingTestCats"
+                  android:label="@string/test_cats_title"
+                  android:theme="@style/CustomTheme2"
+                  android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.TEST_CATS" />
             </intent-filter>
         </activity>
         <activity android:name="GeoDrivingSignsList"
@@ -44,6 +60,14 @@
                   android:configChanges="orientation">
             <intent-filter>
                 <action android:name="android.intent.action.LAWS" />
+            </intent-filter>
+        </activity>
+        <activity android:name="GeoDrivingAbout"
+                  android:label="@string/about_title"
+                  android:theme="@style/CustomTheme2"
+                  android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.ABOUT" />
             </intent-filter>
         </activity>
     </application>

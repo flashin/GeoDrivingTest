@@ -20,4 +20,15 @@
     <string name="exam_failure">Tqveni gamocda dasrulda warumateblad, gamocdis Casabareblad 30 wuTSi sworad unda gepasuxaT 27 SekiTxvisTvis mainc</string>
     <string name="full_answer_desc">pasuxi kiTxvaze</string>
     <string name="but_try_again">daiwye Tavidan</string>
+    <string name="exam_type_1">sagamocdo kiTxvari</string>
+    <string name="exam_desc_1">gamocda Sedgeba 30 kiTxvisgan (TiTo kiTxva TiTo Temidan). gamocdis warmatebiT Casabareblad 30 wuTSi sworad unda upasuxoT aranakleb 27 kiTxvisa</string>
+    <string name="exam_type_2">yvela bileTi</string>
+    <string name="exam_desc_2">airCieT kategoria da upasuxeT yvela kiTxvas arCeuli kategoriidan</string>
+    <string name="test_cats_title">sagamocdo kategoriebi</string>
+    <string name="cat_test_complete">testi dasrulebulia</string>
+    <string name="but_next_cat">Semdegi kategoria</string>
+    <string name="about_title">aplikaciis Sesaxeb</string>
+    <string name="about_main">aplikacia moicavs marTvis mowmobis Teoriuli gamocdis 1025 SekiTxvas, saqarTvelos kanonmdeblobas sagzao moZraobis wesebis Sesaxeb, aseve yvela sagzao niSnis daniSnulebis aRweras</string>
+    <string name="about_author">aplikacia Seqmnilia aleqsandre gedevaniSvilis mier. el. fosta:</string>
+    <string name="about_email">sandro.gedevanishvili@gmail.com</string>
 </resources>

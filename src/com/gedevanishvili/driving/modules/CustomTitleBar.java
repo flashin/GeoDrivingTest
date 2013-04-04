@@ -18,9 +18,10 @@ import android.widget.AdapterView;
 
 import com.gedevanishvili.driving.R;
 import com.gedevanishvili.driving.GeoDrivingTest;
-import com.gedevanishvili.driving.GeoDrivingExam;
+import com.gedevanishvili.driving.GeoDrivingTestMenu;
 import com.gedevanishvili.driving.GeoDrivingSignsList;
 import com.gedevanishvili.driving.GeoDrivingLaws;
+import com.gedevanishvili.driving.GeoDrivingAbout;
 import com.gedevanishvili.driving.adapter.MenuAdapter;
 
 /**
@@ -51,7 +52,8 @@ public class CustomTitleBar {
             context.getString(R.string.goto_main),
             context.getString(R.string.button_test),
             context.getString(R.string.button_signs),
-            context.getString(R.string.button_laws)};
+            context.getString(R.string.button_laws),
+            context.getString(R.string.about_title)};
         
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
         ListView listView = new ListView(context);
@@ -94,9 +96,10 @@ public class CustomTitleBar {
                 //get activity class by selected menu item
                 switch (position){
                     case 0: cl = GeoDrivingTest.class; break;
-                    case 1: cl = GeoDrivingExam.class; break;
+                    case 1: cl = GeoDrivingTestMenu.class; break;
                     case 2: cl = GeoDrivingSignsList.class; break;
                     case 3: cl = GeoDrivingLaws.class; break;
+                    case 4: cl = GeoDrivingAbout.class; break;
                 }
                 
                 if (cl != null){

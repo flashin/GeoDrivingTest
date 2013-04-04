@@ -1,16 +1,20 @@
 D:\Java\GeoDrivingTest\gen\com\gedevanishvili\driving\R.java \
- : D:\Java\GeoDrivingTest\res\layout\exam.xml \
+ : D:\Java\GeoDrivingTest\res\layout\about.xml \
+D:\Java\GeoDrivingTest\res\layout\exam.xml \
 D:\Java\GeoDrivingTest\res\layout\laws.xml \
 D:\Java\GeoDrivingTest\res\layout\main.xml \
 D:\Java\GeoDrivingTest\res\layout\menu_inner.xml \
 D:\Java\GeoDrivingTest\res\layout\signsfull.xml \
 D:\Java\GeoDrivingTest\res\layout\signslist.xml \
+D:\Java\GeoDrivingTest\res\layout\test_cats.xml \
+D:\Java\GeoDrivingTest\res\layout\test_main.xml \
 D:\Java\GeoDrivingTest\res\layout\title_inner.xml \
 D:\Java\GeoDrivingTest\res\layout\title_main.xml \
 D:\Java\GeoDrivingTest\res\raw\bgmain.jpg \
 D:\Java\GeoDrivingTest\res\raw\button_laws.png \
 D:\Java\GeoDrivingTest\res\raw\button_signs.png \
 D:\Java\GeoDrivingTest\res\raw\button_test.png \
+D:\Java\GeoDrivingTest\res\raw\large_icon.png \
 D:\Java\GeoDrivingTest\res\raw\mainroad.jpg \
 D:\Java\GeoDrivingTest\res\raw\main_icon.png \
 D:\Java\GeoDrivingTest\res\raw\right_menu.png \
@@ -1316,6 +1320,7 @@ D:\Java\GeoDrivingTest\res\values\strings.xml \
 D:\Java\GeoDrivingTest\bin\res\raw\button_laws.png \
 D:\Java\GeoDrivingTest\bin\res\raw\button_signs.png \
 D:\Java\GeoDrivingTest\bin\res\raw\button_test.png \
+D:\Java\GeoDrivingTest\bin\res\raw\large_icon.png \
 D:\Java\GeoDrivingTest\bin\res\raw\main_icon.png \
 D:\Java\GeoDrivingTest\bin\res\raw\right_menu.png \
 D:\Java\GeoDrivingTest\bin\res\raw\small_defeat.png \

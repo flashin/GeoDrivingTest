@@ -5,6 +5,7 @@
 package com.gedevanishvili.driving;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -39,9 +40,14 @@ public class GeoDrivingExam extends Activity {
             //Timer
             ExamTimer ExamTimer = new ExamTimer();
             ExamTimer.showTimeElapsed((TextView)findViewById(R.id.test_timer));
+            
+            //get exam type and category id if type is 2
+            Intent intent = getIntent();
+            int examType = intent.getIntExtra("EXAM_TYPE", 1);
+            int examCatId = intent.getIntExtra("TICKET_CAT_ID", 0);
 
             //Exam part
-            ExamManager = new ExamManager(this, 1);
+            ExamManager = new ExamManager(this, examType, examCatId);
         
             //Set custom title bar
             CustomTitleBar.setCustomTitleBar(this, getString(R.string.exam_name));

@@ -15,8 +15,12 @@ import android.widget.TextView;
 import android.graphics.Color;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Typeface;
 import android.view.Gravity;
 import android.view.View;
+import android.text.SpannableString;
+import android.text.style.StyleSpan;
+import android.text.style.UnderlineSpan;
 
 import com.gedevanishvili.driving.R;
 import com.gedevanishvili.driving.GeoDrivingExam;
@@ -34,21 +38,32 @@ public class ExamManager {
     private int type;
     private int q;
     private int cnt;
+    int catId; //if type is 2
+    String catName;
+    int nextCatId;
+    String nextCatName;
     private Activity context;
     private ExamQuestion[] Questions;
     
     /**
      * Initializes class properties and activates first question
      */
-    public ExamManager(Activity context, int t){
+    public ExamManager(Activity context, int t, int catId){
         this.type = t;
+        this.catId = catId;
         this.context = context;
         
         //get questions
-        ExamTicketsDao examTicketsDao = new ExamTicketsDao(context, type);
+        ExamTicketsDao examTicketsDao = new ExamTicketsDao(context, type, catId);
         this.Questions = examTicketsDao.getQuestions();
         this.cnt = examTicketsDao.getCnt();
         this.q = 0;
+        //category parameters
+        if (this.type == 2){
+            this.catName = examTicketsDao.getCurrentCatName();
+            this.nextCatId = examTicketsDao.getNextCatId();
+            this.nextCatName = examTicketsDao.getNextCatName();
+        }
         
         //Set Georgian Fonts to the labels
         this.setGeoFont(R.id.question_n_label, context.getString(R.string.question_n));
@@ -94,6 +109,7 @@ public class ExamManager {
         else {
             //Show answers buttons
             drawButtons();
+            context.findViewById(R.id.exam_area).scrollTo(0, 0);
         }
     }
     
@@ -298,6 +314,24 @@ public class ExamManager {
     View.OnClickListener again_handler = new View.OnClickListener() {
         public void onClick(View v) {
             Intent intent = new Intent(context, GeoDrivingExam.class);
+            if (type == 2){
+                intent.putExtra("EXAM_TYPE", 2);
+                intent.putExtra("TICKET_CAT_ID", catId);
+            }            
+            context.startActivity(intent);
+        }
+    };
+    
+    /**
+     * Starts next Category test
+     */
+    View.OnClickListener next_cat_handler = new View.OnClickListener() {
+        public void onClick(View v) {
+            Intent intent = new Intent(context, GeoDrivingExam.class);
+            if (type == 2){
+                intent.putExtra("EXAM_TYPE", 2);
+                intent.putExtra("TICKET_CAT_ID", nextCatId);
+            }            
             context.startActivity(intent);
         }
     };
@@ -329,6 +363,18 @@ public class ExamManager {
         //updates correct and incorret answers quantity
         updateCounts();
         
+        if (this.type == 1){
+            showExamResult();
+        }
+        else {
+            showCatTestResult();
+        }
+    }
+    
+    /**
+     * shows 30 questions exam result
+     */
+    public void showExamResult(){
         int true_ans = 0; //how many correct answers
         int false_ans = 0; //how many incorrect answers
     
@@ -411,6 +457,96 @@ public class ExamManager {
         startBut.setOnClickListener(again_handler);
         
         successLayout.addView(startBut);
+    }
+    
+    /**
+     * Show category test result
+     */
+    public void showCatTestResult(){
+        //initialize category parameters
+        
+        
+        //show result text in the image place of the activity
+        LinearLayout linearLayout = (LinearLayout)context.findViewById(R.id.image_place);
+        linearLayout.removeAllViews();
+        linearLayout.setOrientation(LinearLayout.VERTICAL);
+        linearLayout.setPadding(0, to_pix(15), 0, to_pix(20));
+        
+        //Text after finishing test
+        TextView resText = new TextView(context);
+        resText.setTypeface(MyResource.getGeoFont(context));
+        resText.setText(context.getString(R.string.cat_test_complete));
+        LinearLayout.LayoutParams textPar = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        textPar.leftMargin = to_pix(5);
+        textPar.rightMargin = to_pix(5);
+        resText.setLayoutParams(textPar);
+        resText.setTextColor(Color.rgb(85, 116, 184));
+        
+        linearLayout.addView(resText);
+        
+        //show actions in the buttons place of the activity
+        LinearLayout actionLayout = (LinearLayout)context.findViewById(R.id.buttons_place);
+        actionLayout.removeAllViews();
+        
+        //Layout for title
+        LinearLayout.LayoutParams titlePar = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        titlePar.leftMargin = to_pix(6);
+        titlePar.rightMargin = to_pix(3);
+        titlePar.topMargin = to_pix(15);
+        titlePar.bottomMargin = to_pix(4);
+        
+        //Layout for description
+        LinearLayout.LayoutParams descPar = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        descPar.leftMargin = to_pix(6);
+        descPar.rightMargin = to_pix(3);
+        descPar.bottomMargin = to_pix(14);
+        
+        //Try again action
+        TextView againTitleText = new TextView(context);
+        againTitleText.setTypeface(MyResource.getGeoFont(context));         
+        SpannableString spanString = new SpannableString(context.getString(R.string.but_try_again));
+        spanString.setSpan(new UnderlineSpan(), 0, spanString.length(), 0);
+        spanString.setSpan(new StyleSpan(Typeface.BOLD), 0, spanString.length(), 0);
+        againTitleText.setText(spanString);
+        againTitleText.setLayoutParams(titlePar);
+        againTitleText.setTextColor(Color.rgb(171, 13, 19));
+        againTitleText.setOnClickListener(again_handler);
+        
+        linearLayout.addView(againTitleText);
+        
+        //Try again text
+        TextView againDescText = new TextView(context);
+        againDescText.setTypeface(MyResource.getGeoFont(context));
+        againDescText.setText(catName);
+        againDescText.setLayoutParams(descPar);
+        againDescText.setTextColor(Color.rgb(16, 1, 130));
+        
+        linearLayout.addView(againDescText);
+        
+        //Next Category
+        if (nextCatId > 0){
+            //next category action
+            TextView nextTitleText = new TextView(context);
+            nextTitleText.setTypeface(MyResource.getGeoFont(context));         
+            spanString = new SpannableString(context.getString(R.string.but_next_cat));
+            spanString.setSpan(new UnderlineSpan(), 0, spanString.length(), 0);
+            spanString.setSpan(new StyleSpan(Typeface.BOLD), 0, spanString.length(), 0);
+            nextTitleText.setText(spanString);
+            nextTitleText.setLayoutParams(titlePar);
+            nextTitleText.setTextColor(Color.rgb(171, 13, 19));
+            nextTitleText.setOnClickListener(next_cat_handler);
+
+            linearLayout.addView(nextTitleText);
+
+            //next category text
+            TextView nextDescText = new TextView(context);
+            nextDescText.setTypeface(MyResource.getGeoFont(context));
+            nextDescText.setText(nextCatName);
+            nextDescText.setLayoutParams(descPar);
+            nextDescText.setTextColor(Color.rgb(16, 1, 130));
+            
+            linearLayout.addView(nextDescText);
+        }
     }
     
     /**

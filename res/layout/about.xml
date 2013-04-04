@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exam_area"
+    style="@style/mainbg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<ImageView
+    style="@style/largeiconimg"
+    android:id="@+id/large_logo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@raw/large_icon"
+    />
+<TextView
+    style="@style/about_main_desc"
+    android:id="@+id/about_main_block"
+    android:text="@string/about_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+<TextView
+    style="@style/about_author_desc"
+    android:id="@+id/about_author_block"
+    android:text="@string/about_author"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+<TextView
+    style="@style/about_email_desc"
+    android:id="@+id/about_email_block"
+    android:text="@string/about_email"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:onClick="sendEmailToAuthor"
+    />
+</LinearLayout>
+</ScrollView>

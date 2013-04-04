@@ -1,26 +1,46 @@
-# view AndroidManifest.xml #generated:17
--keep class com.gedevanishvili.driving.GeoDrivingExam { <init>(...); }
-
-# view AndroidManifest.xml #generated:41
--keep class com.gedevanishvili.driving.GeoDrivingLaws { <init>(...); }
-
-# view AndroidManifest.xml #generated:33
--keep class com.gedevanishvili.driving.GeoDrivingSignsFull { <init>(...); }
+# view AndroidManifest.xml #generated:65
+-keep class com.gedevanishvili.driving.GeoDrivingAbout { <init>(...); }
 
 # view AndroidManifest.xml #generated:25
+-keep class com.gedevanishvili.driving.GeoDrivingExam { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class com.gedevanishvili.driving.GeoDrivingLaws { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class com.gedevanishvili.driving.GeoDrivingSignsFull { <init>(...); }
+
+# view AndroidManifest.xml #generated:41
 -keep class com.gedevanishvili.driving.GeoDrivingSignsList { <init>(...); }
 
 # view AndroidManifest.xml #generated:8
 -keep class com.gedevanishvili.driving.GeoDrivingTest { <init>(...); }
 
-# onClick res/layout/main.xml #generated:17
+# view AndroidManifest.xml #generated:33
+-keep class com.gedevanishvili.driving.GeoDrivingTestCats { <init>(...); }
+
+# view AndroidManifest.xml #generated:17
+-keep class com.gedevanishvili.driving.GeoDrivingTestMenu { <init>(...); }
+
+# onClick res/layout/test_main.xml #generated:18
+# onClick res/layout/test_main.xml #generated:9
 -keepclassmembers class * { *** gotoExam(...); }
+
+# onClick res/layout/main.xml #generated:17
+-keepclassmembers class * { *** gotoExamMenu(...); }
 
 # onClick res/layout/main.xml #generated:43
 -keepclassmembers class * { *** gotoLaws(...); }
 
 # onClick res/layout/main.xml #generated:30
 -keepclassmembers class * { *** gotoSignsList(...); }
+
+# onClick res/layout/test_main.xml #generated:27
+# onClick res/layout/test_main.xml #generated:36
+-keepclassmembers class * { *** gotoTestCats(...); }
+
+# onClick res/layout/about.xml #generated:34
+-keepclassmembers class * { *** sendEmailToAuthor(...); }
 
 # onClick res/layout/title_inner.xml #generated:19
 -keepclassmembers class * { *** showMenu(...); }

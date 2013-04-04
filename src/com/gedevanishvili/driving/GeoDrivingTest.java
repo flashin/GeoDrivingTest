@@ -46,10 +46,16 @@ public class GeoDrivingTest extends Activity
      * GoTo Test Activity
      * @param view 
      */
-    public void gotoExam(View view)
+    public void gotoExamMenu(View view)
     {
-        Intent intent = new Intent(this, GeoDrivingExam.class);
-        startActivity(intent);
+        try {
+            Intent intent = new Intent(this, GeoDrivingTestMenu.class);
+            startActivity(intent);
+        }
+        catch (Exception e){
+            //alert exception
+            MyAlert.alertWin(this, "" + e);
+        }
     }
     
     /**
@@ -58,8 +64,14 @@ public class GeoDrivingTest extends Activity
      */
     public void gotoSignsList(View view)
     {
-        Intent intent = new Intent(this, GeoDrivingSignsList.class);
-        startActivity(intent);
+        try {
+            Intent intent = new Intent(this, GeoDrivingSignsList.class);
+            startActivity(intent);
+        }
+        catch (Exception e){
+            //alert exception
+            MyAlert.alertWin(this, "" + e);
+        }
     }
     
     /**
@@ -68,7 +80,13 @@ public class GeoDrivingTest extends Activity
      */
     public void gotoLaws(View view)
     {
-        Intent intent = new Intent(this, GeoDrivingLaws.class);
-        startActivity(intent);
+        try {
+            Intent intent = new Intent(this, GeoDrivingLaws.class);
+            startActivity(intent);
+        }
+        catch (Exception e){
+            //alert exception
+            MyAlert.alertWin(this, "" + e);
+        }
     }
 }

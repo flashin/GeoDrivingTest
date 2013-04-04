@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mainbg"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+<TextView  
+    style="@style/lawitem"
+    android:id="@+id/testcat"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:minHeight="50sp"
+    android:gravity="center_vertical"
+    />
+</LinearLayout>
