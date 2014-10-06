@@ -31,4 +31,12 @@
     <string name="about_main">aplikacia moicavs marTvis mowmobis Teoriuli gamocdis 1025 SekiTxvas, saqarTvelos kanonmdeblobas sagzao moZraobis wesebis Sesaxeb, aseve yvela sagzao niSnis daniSnulebis aRweras</string>
     <string name="about_author">aplikacia Seqmnilia aleqsandre gedevaniSvilis mier. el. fosta:</string>
     <string name="about_email">sandro.gedevanishvili@gmail.com</string>
+    <string name="report_but">daareporte Secdoma</string>
+    <string name="yes_but">diax</string>
+    <string name="no_but">ara</string>
+    <string name="report_but_desc">Tu Tqven TvliT rom am SekiTxvaze programaSi miTiTebuli pasuxi mcdaria, gTxovT SeatyobinoT programis avtors "diax" Rilakis daWeriT. gsurT Setyobinebis gagzavna?</string>
+    <string name="report_success">Tqveni SeniSvna gagzavnilia programis avtorTan</string>
+    <string name="report_error">kavSiris problema. statusi: </string>
+    <string name="report_error_2">serverTan dakavSireba ver moxerxda</string>
+    <string name="report_wait">Please wait...</string>
 </resources>

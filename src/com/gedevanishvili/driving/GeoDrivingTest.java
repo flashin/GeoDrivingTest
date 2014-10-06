@@ -2,6 +2,7 @@ package com.gedevanishvili.driving;
 
 import com.gedevanishvili.driving.modules.MyResource;
 import com.gedevanishvili.driving.modules.MyAlert;
+import com.gedevanishvili.driving.background.UpdateDB;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -35,6 +36,9 @@ public class GeoDrivingTest extends Activity
             tv.setTypeface(MyResource.getGeoFont(this));
             //Set Custom title label
             tv.setText(R.string.main_title);
+            
+            //Intent mServiceIntent = new Intent(this, UpdateDB.class);
+            //this.startService(mServiceIntent);
         }
         catch (Exception e){
             //alert exception

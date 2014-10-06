@@ -24,7 +24,7 @@ import com.gedevanishvili.driving.modules.MyAlert;
  */
 public class SQLiteDBManager extends SQLiteOpenHelper implements DatabaseManager {    
     public static final String DATABASE_PATH = "/data/data/geo.driving/databases/";
-    public static final String DATABASE_NAME = "prava.db";
+    public static final String DATABASE_NAME = "prava4.2.2.db";
     public static final int DATABASE_VERSION = 1;
     private SQLiteDatabase database;
     private Context myContext;
@@ -52,7 +52,7 @@ public class SQLiteDBManager extends SQLiteOpenHelper implements DatabaseManager
                 String db_path = myContext.getFilesDir() + DATABASE_NAME;
                 try {
                     //open database connection
-                    database = SQLiteDatabase.openDatabase(db_path, null, SQLiteDatabase.OPEN_READONLY);
+                    database = SQLiteDatabase.openDatabase(db_path, null, SQLiteDatabase.OPEN_READWRITE);
                 }
                 catch (SQLiteException e){
                     //Alert open database error
@@ -78,6 +78,13 @@ public class SQLiteDBManager extends SQLiteOpenHelper implements DatabaseManager
         }
     
     /**
+     * executes database query
+     */
+    public void qout(String query){
+            database.execSQL(query);
+        }
+    
+    /**
      * Checks database exists or not
      */
     private boolean checkDatabase(){
@@ -85,7 +92,7 @@ public class SQLiteDBManager extends SQLiteOpenHelper implements DatabaseManager
             String db_path = myContext.getFilesDir() + DATABASE_NAME;
 
             try {
-                database = SQLiteDatabase.openDatabase(db_path, null, SQLiteDatabase.OPEN_READONLY);
+                database = SQLiteDatabase.openDatabase(db_path, null, SQLiteDatabase.OPEN_READWRITE);
             }
             catch (SQLiteException e){
                 return false;

@@ -231,6 +231,20 @@ public class ExamManager {
             descbut.setOnClickListener(desc_handler);
             
             linearLayout.addView(descbut);
+            
+            //Create button to report a mistake in an answer
+            Button repbut = new Button(context);
+            repbut.setPadding(0, to_pix(7), 0, to_pix(7));
+            repbut.setLayoutParams(desc_par);
+            repbut.setBackgroundColor(Color.rgb(85, 116, 184));
+            repbut.setTextColor(Color.rgb(255, 255, 255));
+            repbut.setTextSize(15);
+            repbut.setTypeface(MyResource.getGeoFont(context));
+            repbut.setText(R.string.report_but);
+            //opens pop up window when user clicks the button
+            repbut.setOnClickListener(report_handler);
+            
+            linearLayout.addView(repbut);
             }
         }
     
@@ -333,6 +347,17 @@ public class ExamManager {
                 intent.putExtra("TICKET_CAT_ID", nextCatId);
             }            
             context.startActivity(intent);
+        }
+    };
+    
+    /**
+     * Opens window reporting window
+     */
+    View.OnClickListener report_handler = new View.OnClickListener() {
+        public void onClick(View v) {
+            String url = "http://www.ogres.ge/prava/userActions.php?hash=&action=reportTicket&ticket_id=" + Questions[q].getId();
+            DescWindow myDescWin = new DescWindow(context, context.getString(R.string.report_but), context.getString(R.string.report_but_desc));
+            myDescWin.drawRequestPopup(url);
         }
     };
     

@@ -99,4 +99,11 @@ public class ExamQuestion {
         return description;
     }
     
+    /**
+     returns id
+     */
+    public int getId(){
+        return _id;
+    }
+    
 }

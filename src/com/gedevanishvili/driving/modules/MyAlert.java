@@ -6,6 +6,8 @@ package com.gedevanishvili.driving.modules;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.widget.TextView;
 
 /**
  *
@@ -20,8 +22,34 @@ public class MyAlert {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
         alertDialogBuilder.setTitle("Error Alert");
         alertDialogBuilder.setMessage(str);
+        alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener(){  
+                    public void onClick(DialogInterface dialog, int id) {  
+                        dialog.dismiss(); 
+                    }  
+                });
         
         AlertDialog alertDialog = alertDialogBuilder.create();
 	alertDialog.show();
+    }
+    
+    /**
+     * Static method to alert message in alert dialog
+     */
+    public static void alertGeoWin(Context context, String str){
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
+        alertDialogBuilder.setMessage(str);
+        alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener(){  
+                    public void onClick(DialogInterface dialog, int id) {  
+                        dialog.dismiss(); 
+                    }  
+                });
+        
+        AlertDialog alertDialog = alertDialogBuilder.create();
+	alertDialog.show();
+        
+        //Customize text layout of the dialog
+        TextView textview = (TextView)alertDialog.findViewById(android.R.id.message);
+        textview.setTextSize(13);
+        textview.setTypeface(MyResource.getGeoFont(context));
     }
 }

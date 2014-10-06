@@ -20,4 +20,7 @@ public interface DatabaseManager {
     
     //get cursor of the query
     Cursor qin(String query);
+    
+    //execute query
+    void qout(String query);
 }
