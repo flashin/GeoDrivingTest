@@ -36,13 +36,39 @@ public class GeoDrivingExam extends Activity {
         requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
         setContentView(R.layout.exam);
         
+        this.activateExamBoard(getIntent());
+    }
+    
+    /**
+     * When starting new intent
+     */
+    @Override
+    public void onNewIntent(Intent intent){
+    	
+    	this.activateExamBoard(intent);
+    }
+    
+    /**
+     * Calling activate method to adjust question image to the screen dimensions
+     * @param newConfig 
+     */
+    @Override
+    public void onConfigurationChanged(Configuration newConfig){
+        super.onConfigurationChanged(newConfig);
+        ExamManager.activateTicket();
+    }
+    
+    /**
+     * Activate exam board (on first launch and onNewIntent event)
+     */
+    public void activateExamBoard(Intent intent){
+        
         try {
             //Timer
             ExamTimer ExamTimer = new ExamTimer();
             ExamTimer.showTimeElapsed((TextView)findViewById(R.id.test_timer));
             
             //get exam type and category id if type is 2
-            Intent intent = getIntent();
             int examType = intent.getIntExtra("EXAM_TYPE", 1);
             int examCatId = intent.getIntExtra("TICKET_CAT_ID", 0);
 
@@ -56,16 +82,6 @@ public class GeoDrivingExam extends Activity {
             //alert exception
             MyAlert.alertWin(this, "" + e);
         }
-    }
-    
-    /**
-     * Calling activate method to adjust question image to the screen dimensions
-     * @param newConfig 
-     */
-    @Override
-    public void onConfigurationChanged(Configuration newConfig){
-        super.onConfigurationChanged(newConfig);
-        ExamManager.activateTicket();
     }
     
     /**

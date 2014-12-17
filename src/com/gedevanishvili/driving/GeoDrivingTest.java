@@ -2,14 +2,14 @@ package com.gedevanishvili.driving;
 
 import com.gedevanishvili.driving.modules.MyResource;
 import com.gedevanishvili.driving.modules.MyAlert;
-import com.gedevanishvili.driving.background.UpdateDB;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 /**
  *
@@ -37,8 +37,9 @@ public class GeoDrivingTest extends Activity
             //Set Custom title label
             tv.setText(R.string.main_title);
             
-            //Intent mServiceIntent = new Intent(this, UpdateDB.class);
-            //this.startService(mServiceIntent);
+            AdRequest adRequest = new AdRequest.Builder().build();
+            AdView adView = (AdView) this.findViewById(MyResource.getResource(this, "ad_view"));
+            adView.loadAd(adRequest);
         }
         catch (Exception e){
             //alert exception

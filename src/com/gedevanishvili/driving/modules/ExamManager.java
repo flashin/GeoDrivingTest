@@ -18,6 +18,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup.LayoutParams;
 import android.text.SpannableString;
 import android.text.style.StyleSpan;
 import android.text.style.UnderlineSpan;
@@ -92,10 +93,10 @@ public class ExamManager {
         int scaleHeight = (int) (bf.getHeight() * scalingFactor);
         
         touch.setImageBitmap(bf);
-        LinearLayout.LayoutParams imp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, scaleHeight);
+        LinearLayout.LayoutParams imp = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, scaleHeight);
         touch.setLayoutParams(imp);
         
-        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, scaleHeight);
+        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, scaleHeight);
         lp.addRule(RelativeLayout.BELOW, R.id.top_bar);
         linearLayout.setLayoutParams(lp);
         
@@ -125,11 +126,11 @@ public class ExamManager {
         linearLayout.setOrientation(LinearLayout.HORIZONTAL);
         linearLayout.setPadding(0, to_pix(5), 0, to_pix(20));
         
-        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
         lp.addRule(RelativeLayout.BELOW, R.id.image_place);
         linearLayout.setLayoutParams(lp);
         
-        LinearLayout.LayoutParams ans_btn = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        LinearLayout.LayoutParams ans_btn = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
         ans_btn.leftMargin = to_pix(5);
         ans_btn.rightMargin = to_pix(5);
         
@@ -165,20 +166,20 @@ public class ExamManager {
         //Set content layout
         linearLayout.setOrientation(LinearLayout.VERTICAL);
         linearLayout.setPadding(0, to_pix(5), 0, to_pix(20));
-        RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.FILL_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+        RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
         rlp.addRule(RelativeLayout.BELOW, R.id.image_place);
         linearLayout.setLayoutParams(rlp);
         
         //if question exists
         if (q < cnt){
             RelativeLayout relativeLayout = new RelativeLayout(context);
-            relativeLayout.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT));
+            relativeLayout.setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.FILL_PARENT,LayoutParams.WRAP_CONTENT));
 
             //Create and customize text view for displaying correct answer
             TextView textView = new TextView(context);
             textView.setTypeface(MyResource.getGeoFont(context));
             textView.setText(context.getString(R.string.answer_is) + Questions[q].getAnswer() + " ");
-            RelativeLayout.LayoutParams text_par = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+            RelativeLayout.LayoutParams text_par = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
             text_par.leftMargin = to_pix(5);
             text_par.rightMargin = to_pix(5);
             text_par.addRule(RelativeLayout.ALIGN_PARENT_LEFT);
@@ -196,7 +197,7 @@ public class ExamManager {
             relativeLayout.addView(textView);
         
             //Create and customize button to move to the next question
-            RelativeLayout.LayoutParams ans_btn = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+            RelativeLayout.LayoutParams ans_btn = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
             ans_btn.leftMargin = to_pix(5);
             ans_btn.rightMargin = to_pix(5);
             ans_btn.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
@@ -215,7 +216,7 @@ public class ExamManager {
             linearLayout.addView(relativeLayout);
             
             //create and customize button to show answer full description
-            LinearLayout.LayoutParams desc_par = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+            LinearLayout.LayoutParams desc_par = new LinearLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
             desc_par.topMargin = to_pix(39);
             
             Button descbut = new Button(context);
@@ -288,7 +289,8 @@ public class ExamManager {
      * Sets user answer by button label
      */
     View.OnClickListener myhandler = new View.OnClickListener() {
-        public void onClick(View v) {
+        @Override
+		public void onClick(View v) {
             String but_label = ((Button)v).getText().toString();
             int ans = Integer.parseInt(but_label);
             
@@ -301,7 +303,8 @@ public class ExamManager {
      * Goes to next question
      */
     View.OnClickListener next_handler = new View.OnClickListener() {
-        public void onClick(View v) {
+        @Override
+		public void onClick(View v) {
             q++;
             if (q < cnt){
                 activateTicket();
@@ -316,7 +319,8 @@ public class ExamManager {
      * Opens window with the answer description
      */
     View.OnClickListener desc_handler = new View.OnClickListener() {
-        public void onClick(View v) {
+        @Override
+		public void onClick(View v) {
             DescWindow myDescWin = new DescWindow(context, context.getString(R.string.full_answer_desc), Questions[q].getDescription());
             myDescWin.drawPopup();
         }
@@ -326,7 +330,8 @@ public class ExamManager {
      * Starts test from the beginning
      */
     View.OnClickListener again_handler = new View.OnClickListener() {
-        public void onClick(View v) {
+        @Override
+		public void onClick(View v) {
             Intent intent = new Intent(context, GeoDrivingExam.class);
             if (type == 2){
                 intent.putExtra("EXAM_TYPE", 2);
@@ -340,7 +345,8 @@ public class ExamManager {
      * Starts next Category test
      */
     View.OnClickListener next_cat_handler = new View.OnClickListener() {
-        public void onClick(View v) {
+        @Override
+		public void onClick(View v) {
             Intent intent = new Intent(context, GeoDrivingExam.class);
             if (type == 2){
                 intent.putExtra("EXAM_TYPE", 2);
@@ -354,7 +360,8 @@ public class ExamManager {
      * Opens window reporting window
      */
     View.OnClickListener report_handler = new View.OnClickListener() {
-        public void onClick(View v) {
+        @Override
+		public void onClick(View v) {
             String url = "http://www.ogres.ge/prava/userActions.php?hash=&action=reportTicket&ticket_id=" + Questions[q].getId();
             DescWindow myDescWin = new DescWindow(context, context.getString(R.string.report_but), context.getString(R.string.report_but_desc));
             myDescWin.drawRequestPopup(url);
@@ -436,11 +443,11 @@ public class ExamManager {
         ImageView touch = new ImageView(context);
         touch.setImageResource(imRes);
         
-        LinearLayout.LayoutParams imPar = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        LinearLayout.LayoutParams imPar = new LinearLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
         imPar.gravity = Gravity.CENTER_HORIZONTAL;
         touch.setLayoutParams(imPar);
         
-        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.FILL_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
         lp.addRule(RelativeLayout.BELOW, R.id.top_bar);
         lp.topMargin = to_pix(20);
         lp.bottomMargin = to_pix(20);
@@ -455,20 +462,20 @@ public class ExamManager {
         TextView textView = new TextView(context);
         textView.setTypeface(MyResource.getGeoFont(context));
         textView.setText(resMess);
-        LinearLayout.LayoutParams textPar = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        LinearLayout.LayoutParams textPar = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
         textPar.leftMargin = to_pix(5);
         textPar.rightMargin = to_pix(5);
         textView.setLayoutParams(textPar);
         textView.setTextColor(Color.rgb(171, 13, 19));
         
-        RelativeLayout.LayoutParams tp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.FILL_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+        RelativeLayout.LayoutParams tp = new RelativeLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
         tp.addRule(RelativeLayout.BELOW, R.id.image_place);
         successLayout.setLayoutParams(tp);
         
         successLayout.addView(textView);
         
         //create button to start test again
-        LinearLayout.LayoutParams startPar = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        LinearLayout.LayoutParams startPar = new LinearLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
         startPar.topMargin = to_pix(39);
         
         Button startBut = new Button(context);
@@ -501,7 +508,7 @@ public class ExamManager {
         TextView resText = new TextView(context);
         resText.setTypeface(MyResource.getGeoFont(context));
         resText.setText(context.getString(R.string.cat_test_complete));
-        LinearLayout.LayoutParams textPar = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        LinearLayout.LayoutParams textPar = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
         textPar.leftMargin = to_pix(5);
         textPar.rightMargin = to_pix(5);
         resText.setLayoutParams(textPar);
@@ -514,14 +521,14 @@ public class ExamManager {
         actionLayout.removeAllViews();
         
         //Layout for title
-        LinearLayout.LayoutParams titlePar = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        LinearLayout.LayoutParams titlePar = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
         titlePar.leftMargin = to_pix(6);
         titlePar.rightMargin = to_pix(3);
         titlePar.topMargin = to_pix(15);
         titlePar.bottomMargin = to_pix(4);
         
         //Layout for description
-        LinearLayout.LayoutParams descPar = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        LinearLayout.LayoutParams descPar = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
         descPar.leftMargin = to_pix(6);
         descPar.rightMargin = to_pix(3);
         descPar.bottomMargin = to_pix(14);

@@ -8,6 +8,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
 import android.view.View;
 import android.view.Gravity;
@@ -73,8 +74,8 @@ public class CustomTitleBar {
         //Customize menu alert dialog
         WindowManager.LayoutParams WMLP = alertDialog.getWindow().getAttributes();
         WMLP.gravity = Gravity.TOP | Gravity.RIGHT;
-        WMLP.width = WindowManager.LayoutParams.WRAP_CONTENT;
-        WMLP.height = WindowManager.LayoutParams.WRAP_CONTENT;
+        WMLP.width = LayoutParams.WRAP_CONTENT;
+        WMLP.height = LayoutParams.WRAP_CONTENT;
         WMLP.x = 2;
         WMLP.y = 2;
         alertDialog.getWindow().setAttributes(WMLP);

@@ -37,7 +37,8 @@ public class SQLiteDBManager extends SQLiteOpenHelper implements DatabaseManager
     /**
      * Open DataBase connection
      */
-    public void openDatabase(){
+    @Override
+	public void openDatabase(){
             
             if (!checkDatabase()){
                 try {
@@ -64,14 +65,16 @@ public class SQLiteDBManager extends SQLiteOpenHelper implements DatabaseManager
     /**
      * Close database connection
      */
-    public void closeDatabase(){
+    @Override
+	public void closeDatabase(){
             database.close();
         }
     
     /**
      * executes database query and returns cursor of the result
      */
-    public Cursor qin(String query){
+    @Override
+	public Cursor qin(String query){
             Cursor cursor = database.rawQuery(query, null);
 
             return cursor;
@@ -80,7 +83,8 @@ public class SQLiteDBManager extends SQLiteOpenHelper implements DatabaseManager
     /**
      * executes database query
      */
-    public void qout(String query){
+    @Override
+	public void qout(String query){
             database.execSQL(query);
         }
     
@@ -131,14 +135,16 @@ public class SQLiteDBManager extends SQLiteOpenHelper implements DatabaseManager
     /**
      * Override onCreate method
      */
-    public void onCreate(SQLiteDatabase db) {
+    @Override
+	public void onCreate(SQLiteDatabase db) {
 
         }
     
     /**
      * Override onUpgrade method
      */
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+    @Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
             onCreate(db);
         }
 }

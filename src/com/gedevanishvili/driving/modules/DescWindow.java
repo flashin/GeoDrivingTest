@@ -11,8 +11,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.view.Gravity;
+import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
@@ -69,7 +69,8 @@ public class DescWindow {
             
             //Add close button to the dialog
             alertDialogBuilder.setPositiveButton(R.string.but_close_alert_dia, new DialogInterface.OnClickListener(){  
-                    public void onClick(DialogInterface dialog, int id) {  
+                    @Override
+					public void onClick(DialogInterface dialog, int id) {  
                         dialog.dismiss(); 
                     }  
                 }
@@ -114,7 +115,8 @@ public class DescWindow {
             
             //Add close button to the dialog
             alertDialogBuilder.setPositiveButton(R.string.but_close_alert_dia, new DialogInterface.OnClickListener(){  
-                    public void onClick(DialogInterface dialog, int id) {  
+                    @Override
+					public void onClick(DialogInterface dialog, int id) {  
                         dialog.dismiss(); 
                     }  
                 }
@@ -123,7 +125,7 @@ public class DescWindow {
             AlertDialog alertDialog = alertDialogBuilder.create();
             
             //set layout parameters for the text in dialog
-            LinearLayout.LayoutParams lp1 = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.WRAP_CONTENT);
+            LinearLayout.LayoutParams lp1 = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);
             lp1.gravity = Gravity.CENTER_HORIZONTAL;
             lp1.setMargins(10, 4, 10, 4);
             
@@ -141,7 +143,7 @@ public class DescWindow {
             
             //add text and image to linear layout
             LinearLayout linearLayout = new LinearLayout(context);
-            linearLayout.setOrientation(linearLayout.VERTICAL);
+            linearLayout.setOrientation(LinearLayout.VERTICAL);
             linearLayout.addView(imageView);
             linearLayout.addView(textView);
             
@@ -180,7 +182,8 @@ public class DescWindow {
             alertDialogBuilder.setCustomTitle(titleView);
             
             alertDialogBuilder.setPositiveButton(R.string.yes_but, new DialogInterface.OnClickListener(){ 
-                    public void onClick(DialogInterface dialog, int id) {
+                    @Override
+					public void onClick(DialogInterface dialog, int id) {
                         dialog.dismiss();
                         Activity act = (Activity) context;
                         Window myWin = act.getWindow();
@@ -199,7 +202,8 @@ public class DescWindow {
             
             //Add close button to the dialog
             alertDialogBuilder.setNegativeButton(R.string.no_but, new DialogInterface.OnClickListener(){  
-                    public void onClick(DialogInterface dialog, int id) {  
+                    @Override
+					public void onClick(DialogInterface dialog, int id) {  
                         dialog.dismiss(); 
                     }  
                 }

@@ -3,10 +3,14 @@
       package="com.gedevanishvili.driving"
       android:versionCode="17"
       android:versionName="4.2.1">
-    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="8" />
+    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="19" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application android:label="@string/app_name"
-                 android:icon="@raw/small_icon">
+                 android:icon="@raw/small_icon"
+                 android:allowBackup="true">
+        <meta-data android:name="com.google.android.gms.version"
+        		   android:value="@integer/google_play_services_version" />
         <activity android:name="GeoDrivingTest"
                   android:label="@string/app_name"
                   android:screenOrientation="portrait"
@@ -27,7 +31,8 @@
         <activity android:name="GeoDrivingExam"
                   android:label="@string/exam_name"
                   android:theme="@style/CustomTheme2"
-                  android:configChanges="orientation">
+                  android:configChanges="orientation"
+                  android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.EXAM" />
             </intent-filter>
@@ -72,6 +77,7 @@
                 <action android:name="android.intent.action.ABOUT" />
             </intent-filter>
         </activity>
-        <service android:name="UpdateDB"></service>
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            	  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
     </application>
 </manifest> 

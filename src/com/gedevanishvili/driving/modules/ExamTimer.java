@@ -32,7 +32,8 @@ public class ExamTimer {
         
         //Runnable object to call its method once in a secon
         Runnable updateTimeElapsed = new Runnable(){
-            public void run(){
+            @Override
+			public void run(){
                 //how much minutes, seconds passed
                 long diff = System.currentTimeMillis() - startTime;
         

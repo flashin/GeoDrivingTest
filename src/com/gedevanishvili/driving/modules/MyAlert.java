@@ -23,7 +23,8 @@ public class MyAlert {
         alertDialogBuilder.setTitle("Error Alert");
         alertDialogBuilder.setMessage(str);
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener(){  
-                    public void onClick(DialogInterface dialog, int id) {  
+                    @Override
+					public void onClick(DialogInterface dialog, int id) {  
                         dialog.dismiss(); 
                     }  
                 });
@@ -39,7 +40,8 @@ public class MyAlert {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
         alertDialogBuilder.setMessage(str);
         alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener(){  
-                    public void onClick(DialogInterface dialog, int id) {  
+                    @Override
+					public void onClick(DialogInterface dialog, int id) {  
                         dialog.dismiss(); 
                     }  
                 });
