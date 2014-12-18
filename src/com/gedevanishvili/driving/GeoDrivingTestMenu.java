@@ -12,6 +12,8 @@ import android.view.Window;
 import android.widget.TextView;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import com.gedevanishvili.driving.modules.CustomTitleBar;
 import com.gedevanishvili.driving.modules.MyAlert;
@@ -44,6 +46,10 @@ public class GeoDrivingTestMenu extends Activity {
             changeFont(R.id.type_1_desc, false);
             changeFont(R.id.type_2_but, true);
             changeFont(R.id.type_2_desc, false);
+            
+            AdRequest adRequest = new AdRequest.Builder().build();
+            AdView adView = (AdView) this.findViewById(MyResource.getResource(this, "ad_view"));
+            adView.loadAd(adRequest);
         }
         catch (Exception e){
             //alert exception

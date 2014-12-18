@@ -1,45 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     style="@style/mainbg"
-    android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    >
-<TextView
-    style="@style/test_menu_title"
-    android:id="@+id/type_1_but"
-    android:text="@string/exam_type_1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:clickable="true"
-    android:onClick="gotoExam"
-    />
-<TextView
-    style="@style/test_menu_desc"
-    android:id="@+id/type_1_desc"
-    android:text="@string/exam_desc_1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:clickable="true"
-    android:onClick="gotoExam"
-    />
-<TextView
-    style="@style/test_menu_title"
-    android:id="@+id/type_2_but"
-    android:text="@string/exam_type_2"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:clickable="true"
-    android:onClick="gotoTestCats"
-    />
-<TextView
-    style="@style/test_menu_desc"
-    android:id="@+id/type_2_desc"
-    android:text="@string/exam_desc_2"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:clickable="true"
-    android:onClick="gotoTestCats"
-    />
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="6"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/type_1_but"
+            style="@style/test_menu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="gotoExam"
+            android:text="@string/exam_type_1" />
+
+        <TextView
+            android:id="@+id/type_1_desc"
+            style="@style/test_menu_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="gotoExam"
+            android:text="@string/exam_desc_1" />
+
+        <TextView
+            android:id="@+id/type_2_but"
+            style="@style/test_menu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="gotoTestCats"
+            android:text="@string/exam_type_2" />
+
+        <TextView
+            android:id="@+id/type_2_desc"
+            style="@style/test_menu_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="gotoTestCats"
+            android:text="@string/exam_desc_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="6sp" >
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/ad_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-4603479470137694/4222802162" />
+    </LinearLayout>
+
 </LinearLayout>
