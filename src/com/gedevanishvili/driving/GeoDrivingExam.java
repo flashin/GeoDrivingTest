@@ -34,7 +34,6 @@ public class GeoDrivingExam extends Activity {
         super.onCreate(icicle);
         // ToDo add your GUI initialization code here
         requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
-        setContentView(R.layout.exam);
         
         this.activateExamBoard(getIntent());
     }
@@ -62,6 +61,8 @@ public class GeoDrivingExam extends Activity {
      * Activate exam board (on first launch and onNewIntent event)
      */
     public void activateExamBoard(Intent intent){
+
+        setContentView(R.layout.exam);
         
         try {
             //Timer

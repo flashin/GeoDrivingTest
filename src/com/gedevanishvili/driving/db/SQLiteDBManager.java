@@ -24,7 +24,7 @@ import com.gedevanishvili.driving.modules.MyAlert;
  */
 public class SQLiteDBManager extends SQLiteOpenHelper implements DatabaseManager {    
     public static final String DATABASE_PATH = "/data/data/geo.driving/databases/";
-    public static final String DATABASE_NAME = "prava4.2.3.db";
+    public static final String DATABASE_NAME = "prava5.0.1.db";
     public static final int DATABASE_VERSION = 1;
     private SQLiteDatabase database;
     private Context myContext;

@@ -103,6 +103,11 @@ public class ExamManager {
 	        
 	        linearLayout.addView(touch);
         }
+        else {
+        	RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+	        lp.addRule(RelativeLayout.BELOW, R.id.top_bar);
+	        linearLayout.setLayoutParams(lp);
+        }
         
         //Add question
         linearLayout = (LinearLayout)context.findViewById(R.id.question_place);
@@ -175,7 +180,7 @@ public class ExamManager {
             btns[j].setTextColor(Color.rgb(255, 255, 255));
             btns[j].setTextSize(15);
             btns[j].setTypeface(MyResource.getGeoFont(context));
-            btns[j].setText(answers[j]);
+            btns[j].setText((j + 1) + ". " + answers[j]);
             btns[j].setId(j + 1);
             btns[j].setOnClickListener(myhandler);
             
@@ -405,7 +410,7 @@ public class ExamManager {
     View.OnClickListener report_handler = new View.OnClickListener() {
         @Override
 		public void onClick(View v) {
-            String url = "http://www.ogres.ge/prava/userActions.php?hash=&action=reportTicket&ticket_id=" + Questions[q].getId();
+            String url = "http://www.ogres.ge/prava/userActions.php?new=1&hash=&action=reportTicket&ticket_id=" + Questions[q].getId();
             DescWindow myDescWin = new DescWindow(context, context.getString(R.string.report_but), context.getString(R.string.report_but_desc));
             myDescWin.drawRequestPopup(url);
         }
@@ -478,19 +483,23 @@ public class ExamManager {
         String resMess = exam_success ? context.getString(R.string.exam_success) : context.getString(R.string.exam_failure);
         int imRes = exam_success ? R.raw.small_icon : R.raw.small_defeat;
         
+        //empty question view
+        LinearLayout linearLayout = (LinearLayout)context.findViewById(R.id.question_place);
+        linearLayout.removeAllViews();
+        
         //show result image in the image place of the activity
-        LinearLayout linearLayout = (LinearLayout)context.findViewById(R.id.image_place);
+        linearLayout = (LinearLayout)context.findViewById(R.id.image_place);
         linearLayout.removeAllViews();
         linearLayout.setPadding(0, 0, 0, to_pix(20));
         
         ImageView touch = new ImageView(context);
         touch.setImageResource(imRes);
         
-        LinearLayout.LayoutParams imPar = new LinearLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
+        LinearLayout.LayoutParams imPar = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
         imPar.gravity = Gravity.CENTER_HORIZONTAL;
         touch.setLayoutParams(imPar);
         
-        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
+        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
         lp.addRule(RelativeLayout.BELOW, R.id.top_bar);
         lp.topMargin = to_pix(20);
         lp.bottomMargin = to_pix(20);
@@ -539,11 +548,17 @@ public class ExamManager {
      */
     public void showCatTestResult(){
         //initialize category parameters
-        
+    	
+    	//Empty question space
+        LinearLayout linearLayout = (LinearLayout)context.findViewById(R.id.question_place);
+        linearLayout.removeAllViews();        
         
         //show result text in the image place of the activity
-        LinearLayout linearLayout = (LinearLayout)context.findViewById(R.id.image_place);
+        linearLayout = (LinearLayout)context.findViewById(R.id.image_place);
         linearLayout.removeAllViews();
+        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+        lp.addRule(RelativeLayout.BELOW, R.id.top_bar);
+        linearLayout.setLayoutParams(lp);
         linearLayout.setOrientation(LinearLayout.VERTICAL);
         linearLayout.setPadding(0, to_pix(15), 0, to_pix(20));
         
