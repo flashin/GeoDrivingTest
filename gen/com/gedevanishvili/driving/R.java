@@ -44,76 +44,6 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int adUnitId=0x7f010002;
-        /**  Appearance of the buy button. Must be one of "classic", "grayscale" and "monochrome" 
-         <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>classic</code></td><td>1</td><td></td></tr>
-<tr><td><code>grayscale</code></td><td>2</td><td></td></tr>
-<tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
-</table>
-         */
-        public static final int buyButtonAppearance=0x7f010018;
-        /**  Height of the buy button. This includes an 8dp padding (4dp on each side) used for
-             pressed and focused states of the button. The value can be a specific height, e.g.
-             "48dp", or special values "match_parent" and "wrap_content". 
-         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-<p>May be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
-<tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
-</table>
-         */
-        public static final int buyButtonHeight=0x7f010015;
-        /**  Text on the buy button. Must be one of "buy_with_google", "buy_now" and "book_now" 
-         <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>buy_with_google</code></td><td>1</td><td></td></tr>
-<tr><td><code>buy_now</code></td><td>2</td><td></td></tr>
-<tr><td><code>book_now</code></td><td>3</td><td></td></tr>
-</table>
-         */
-        public static final int buyButtonText=0x7f010017;
-        /**  Width of the buy button. This includes an 8dp padding (4dp on each side) used for
-             pressed and focused states of the button. The value can be a specific width, e.g.
-             "300dp", or special values "match_parent" and "wrap_content". 
-         <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-<p>May be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
-<tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
-</table>
-         */
-        public static final int buyButtonWidth=0x7f010016;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -154,36 +84,6 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int cameraZoom=0x7f010008;
-        /**  Google Wallet environment to use 
-         <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>production</code></td><td>1</td><td></td></tr>
-<tr><td><code>sandbox</code></td><td>0</td><td></td></tr>
-<tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
-</table>
-         */
-        public static final int environment=0x7f010012;
-        /**  Fragment mode 
-         <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>buyButton</code></td><td>1</td><td></td></tr>
-<tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
-</table>
-         */
-        public static final int fragmentMode=0x7f010014;
-        /**  A style resource specifing attributes to customize the look and feel of WalletFragment 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int fragmentStyle=0x7f010013;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -198,69 +98,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 </table>
          */
         public static final int mapType=0x7f010003;
-        /**  Masked wallet details background 
-         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-         */
-        public static final int maskedWalletDetailsBackground=0x7f01001b;
-        /**  "Change" button background in masked wallet details view 
-         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-         */
-        public static final int maskedWalletDetailsButtonBackground=0x7f01001d;
-        /**  TextAppearance for the "Change" button in masked wallet details view 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int maskedWalletDetailsButtonTextAppearance=0x7f01001c;
-        /**  TextAppearance for headers describing masked wallet details 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int maskedWalletDetailsHeaderTextAppearance=0x7f01001a;
-        /**  Type of the wallet logo image in masked wallet details view 
-         <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>classic</code></td><td>1</td><td></td></tr>
-<tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
-</table>
-         */
-        public static final int maskedWalletDetailsLogoImageType=0x7f01001f;
-        /**  Color of the Google Wallet logo text in masked wallet details view 
-         <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int maskedWalletDetailsLogoTextColor=0x7f01001e;
-        /**  TextAppearance for masked wallet details 
-         <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int maskedWalletDetailsTextAppearance=0x7f010019;
-        /**  Theme to be used for the Wallet selector 
-         <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
-<tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
-</table>
-         */
-        public static final int theme=0x7f010011;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -327,40 +164,20 @@ containing a value of this type.
         public static final int zOrderOnTop=0x7f010010;
     }
     public static final class color {
-        public static final int common_action_bar_splitter=0x7f060009;
+        public static final int common_action_bar_splitter=0x7f050009;
         /**  Sign-in Button Colors 
          */
-        public static final int common_signin_btn_dark_text_default=0x7f060000;
-        public static final int common_signin_btn_dark_text_disabled=0x7f060002;
-        public static final int common_signin_btn_dark_text_focused=0x7f060003;
-        public static final int common_signin_btn_dark_text_pressed=0x7f060001;
-        public static final int common_signin_btn_default_background=0x7f060008;
-        public static final int common_signin_btn_light_text_default=0x7f060004;
-        public static final int common_signin_btn_light_text_disabled=0x7f060006;
-        public static final int common_signin_btn_light_text_focused=0x7f060007;
-        public static final int common_signin_btn_light_text_pressed=0x7f060005;
-        public static final int common_signin_btn_text_dark=0x7f060017;
-        public static final int common_signin_btn_text_light=0x7f060018;
-        public static final int wallet_bright_foreground_disabled_holo_light=0x7f06000f;
-        /** 
-         Wallet colors to support consistent Wallet fragment holo dark UI in client application
-         regardless of the theme and device type
-    
-         */
-        public static final int wallet_bright_foreground_holo_dark=0x7f06000a;
-        public static final int wallet_bright_foreground_holo_light=0x7f060010;
-        public static final int wallet_dim_foreground_disabled_holo_dark=0x7f06000c;
-        public static final int wallet_dim_foreground_holo_dark=0x7f06000b;
-        public static final int wallet_dim_foreground_inverse_disabled_holo_dark=0x7f06000e;
-        public static final int wallet_dim_foreground_inverse_holo_dark=0x7f06000d;
-        public static final int wallet_highlighted_text_holo_dark=0x7f060014;
-        public static final int wallet_highlighted_text_holo_light=0x7f060013;
-        public static final int wallet_hint_foreground_holo_dark=0x7f060012;
-        public static final int wallet_hint_foreground_holo_light=0x7f060011;
-        public static final int wallet_holo_blue_light=0x7f060015;
-        public static final int wallet_link_text_light=0x7f060016;
-        public static final int wallet_primary_text_holo_light=0x7f060019;
-        public static final int wallet_secondary_text_holo_dark=0x7f06001a;
+        public static final int common_signin_btn_dark_text_default=0x7f050000;
+        public static final int common_signin_btn_dark_text_disabled=0x7f050002;
+        public static final int common_signin_btn_dark_text_focused=0x7f050003;
+        public static final int common_signin_btn_dark_text_pressed=0x7f050001;
+        public static final int common_signin_btn_default_background=0x7f050008;
+        public static final int common_signin_btn_light_text_default=0x7f050004;
+        public static final int common_signin_btn_light_text_disabled=0x7f050006;
+        public static final int common_signin_btn_light_text_focused=0x7f050007;
+        public static final int common_signin_btn_light_text_pressed=0x7f050005;
+        public static final int common_signin_btn_text_dark=0x7f05000a;
+        public static final int common_signin_btn_text_light=0x7f05000b;
     }
     public static final class drawable {
         public static final int common_signin_btn_icon_dark=0x7f020000;
@@ -391,66 +208,50 @@ containing a value of this type.
         public static final int ic_plusone_small_off_client=0x7f020019;
         public static final int ic_plusone_standard_off_client=0x7f02001a;
         public static final int ic_plusone_tall_off_client=0x7f02001b;
-        public static final int powered_by_google_dark=0x7f02001c;
-        public static final int powered_by_google_light=0x7f02001d;
     }
     public static final class id {
-        public static final int about_author_block=0x7f080017;
-        public static final int about_email_block=0x7f080018;
-        public static final int about_main_block=0x7f080016;
-        public static final int ad_view=0x7f080019;
-        public static final int book_now=0x7f080010;
-        public static final int button_laws=0x7f080028;
-        public static final int button_signs=0x7f080027;
-        public static final int button_test=0x7f080026;
-        public static final int buttons_place=0x7f080023;
-        public static final int buyButton=0x7f08000a;
-        public static final int buy_now=0x7f08000f;
-        public static final int buy_with_google=0x7f08000e;
-        public static final int classic=0x7f080011;
-        public static final int correct_n_label=0x7f08001e;
-        public static final int correct_n_value=0x7f08001f;
-        public static final int exam_area=0x7f080014;
-        public static final int grayscale=0x7f080012;
-        public static final int header_inner=0x7f080033;
-        public static final int header_main=0x7f080034;
-        public static final int holo_dark=0x7f080005;
-        public static final int holo_light=0x7f080006;
-        public static final int hybrid=0x7f080004;
-        public static final int image_place=0x7f080022;
-        public static final int inner_menu_item=0x7f080029;
-        public static final int large_logo=0x7f080015;
-        public static final int lawitem=0x7f080024;
-        public static final int main_road=0x7f080025;
-        public static final int match_parent=0x7f08000c;
-        public static final int mistakes_n_label=0x7f080020;
-        public static final int mistakes_n_value=0x7f080021;
-        public static final int monochrome=0x7f080013;
-        public static final int none=0x7f080000;
-        public static final int normal=0x7f080001;
-        public static final int production=0x7f080007;
-        public static final int question_n_label=0x7f08001c;
-        public static final int question_n_value=0x7f08001d;
-        public static final int sandbox=0x7f080008;
-        public static final int satellite=0x7f080002;
-        public static final int selectionDetails=0x7f08000b;
-        public static final int signicon=0x7f08002b;
-        public static final int signlabel=0x7f08002c;
-        public static final int signlistitem=0x7f08002d;
-        public static final int signs_table=0x7f08002a;
-        public static final int strict_sandbox=0x7f080009;
-        public static final int terrain=0x7f080003;
-        public static final int test_timer=0x7f08001b;
-        public static final int testcat=0x7f08002e;
-        public static final int top_bar=0x7f08001a;
-        public static final int type_1_but=0x7f08002f;
-        public static final int type_1_desc=0x7f080030;
-        public static final int type_2_but=0x7f080031;
-        public static final int type_2_desc=0x7f080032;
-        public static final int wrap_content=0x7f08000d;
+        public static final int about_author_block=0x7f060008;
+        public static final int about_email_block=0x7f060009;
+        public static final int about_main_block=0x7f060007;
+        public static final int ad_view=0x7f06000a;
+        public static final int button_laws=0x7f06001a;
+        public static final int button_signs=0x7f060019;
+        public static final int button_test=0x7f060018;
+        public static final int buttons_place=0x7f060015;
+        public static final int correct_n_label=0x7f06000f;
+        public static final int correct_n_value=0x7f060010;
+        public static final int exam_area=0x7f060005;
+        public static final int header_inner=0x7f060025;
+        public static final int header_main=0x7f060026;
+        public static final int hybrid=0x7f060004;
+        public static final int image_place=0x7f060013;
+        public static final int inner_menu_item=0x7f06001b;
+        public static final int large_logo=0x7f060006;
+        public static final int lawitem=0x7f060016;
+        public static final int main_road=0x7f060017;
+        public static final int mistakes_n_label=0x7f060011;
+        public static final int mistakes_n_value=0x7f060012;
+        public static final int none=0x7f060000;
+        public static final int normal=0x7f060001;
+        public static final int question_n_label=0x7f06000d;
+        public static final int question_n_value=0x7f06000e;
+        public static final int question_place=0x7f060014;
+        public static final int satellite=0x7f060002;
+        public static final int signicon=0x7f06001d;
+        public static final int signlabel=0x7f06001e;
+        public static final int signlistitem=0x7f06001f;
+        public static final int signs_table=0x7f06001c;
+        public static final int terrain=0x7f060003;
+        public static final int test_timer=0x7f06000c;
+        public static final int testcat=0x7f060020;
+        public static final int top_bar=0x7f06000b;
+        public static final int type_1_but=0x7f060021;
+        public static final int type_1_desc=0x7f060022;
+        public static final int type_2_but=0x7f060023;
+        public static final int type_2_desc=0x7f060024;
     }
     public static final class integer {
-        public static final int google_play_services_version=0x7f090000;
+        public static final int google_play_services_version=0x7f080000;
     }
     public static final class layout {
         public static final int about=0x7f030000;
@@ -775,1001 +576,463 @@ containing a value of this type.
         public static final int tickets_10_t_35=0x7f040132;
         public static final int tickets_10_t_36=0x7f040133;
         public static final int tickets_10_t_37=0x7f040134;
-        public static final int tickets_10_t_38=0x7f040135;
-        public static final int tickets_10_t_39=0x7f040136;
-        public static final int tickets_10_t_4=0x7f040137;
-        public static final int tickets_10_t_40=0x7f040138;
-        public static final int tickets_10_t_41=0x7f040139;
-        public static final int tickets_10_t_42=0x7f04013a;
-        public static final int tickets_10_t_43=0x7f04013b;
-        public static final int tickets_10_t_44=0x7f04013c;
-        public static final int tickets_10_t_45=0x7f04013d;
-        public static final int tickets_10_t_46=0x7f04013e;
-        public static final int tickets_10_t_47=0x7f04013f;
-        public static final int tickets_10_t_48=0x7f040140;
-        public static final int tickets_10_t_49=0x7f040141;
-        public static final int tickets_10_t_5=0x7f040142;
-        public static final int tickets_10_t_50=0x7f040143;
-        public static final int tickets_10_t_51=0x7f040144;
-        public static final int tickets_10_t_52=0x7f040145;
-        public static final int tickets_10_t_53=0x7f040146;
-        public static final int tickets_10_t_54=0x7f040147;
-        public static final int tickets_10_t_55=0x7f040148;
-        public static final int tickets_10_t_56=0x7f040149;
-        public static final int tickets_10_t_57=0x7f04014a;
-        public static final int tickets_10_t_58=0x7f04014b;
-        public static final int tickets_10_t_59=0x7f04014c;
-        public static final int tickets_10_t_6=0x7f04014d;
-        public static final int tickets_10_t_60=0x7f04014e;
-        public static final int tickets_10_t_61=0x7f04014f;
-        public static final int tickets_10_t_62=0x7f040150;
-        public static final int tickets_10_t_7=0x7f040151;
-        public static final int tickets_10_t_8=0x7f040152;
-        public static final int tickets_10_t_9=0x7f040153;
-        public static final int tickets_11_t_1=0x7f040154;
-        public static final int tickets_11_t_10=0x7f040155;
-        public static final int tickets_11_t_11=0x7f040156;
-        public static final int tickets_11_t_12=0x7f040157;
-        public static final int tickets_11_t_13=0x7f040158;
-        public static final int tickets_11_t_14=0x7f040159;
-        public static final int tickets_11_t_15=0x7f04015a;
-        public static final int tickets_11_t_16=0x7f04015b;
-        public static final int tickets_11_t_17=0x7f04015c;
-        public static final int tickets_11_t_18=0x7f04015d;
-        public static final int tickets_11_t_19=0x7f04015e;
-        public static final int tickets_11_t_2=0x7f04015f;
-        public static final int tickets_11_t_20=0x7f040160;
-        public static final int tickets_11_t_21=0x7f040161;
-        public static final int tickets_11_t_22=0x7f040162;
-        public static final int tickets_11_t_23=0x7f040163;
-        public static final int tickets_11_t_24=0x7f040164;
-        public static final int tickets_11_t_25=0x7f040165;
-        public static final int tickets_11_t_26=0x7f040166;
-        public static final int tickets_11_t_27=0x7f040167;
-        public static final int tickets_11_t_28=0x7f040168;
-        public static final int tickets_11_t_29=0x7f040169;
-        public static final int tickets_11_t_3=0x7f04016a;
-        public static final int tickets_11_t_30=0x7f04016b;
-        public static final int tickets_11_t_31=0x7f04016c;
-        public static final int tickets_11_t_32=0x7f04016d;
-        public static final int tickets_11_t_33=0x7f04016e;
-        public static final int tickets_11_t_34=0x7f04016f;
-        public static final int tickets_11_t_35=0x7f040170;
-        public static final int tickets_11_t_36=0x7f040171;
-        public static final int tickets_11_t_37=0x7f040172;
-        public static final int tickets_11_t_38=0x7f040173;
-        public static final int tickets_11_t_39=0x7f040174;
-        public static final int tickets_11_t_4=0x7f040175;
-        public static final int tickets_11_t_40=0x7f040176;
-        public static final int tickets_11_t_41=0x7f040177;
-        public static final int tickets_11_t_42=0x7f040178;
-        public static final int tickets_11_t_43=0x7f040179;
-        public static final int tickets_11_t_44=0x7f04017a;
-        public static final int tickets_11_t_45=0x7f04017b;
-        public static final int tickets_11_t_46=0x7f04017c;
-        public static final int tickets_11_t_47=0x7f04017d;
-        public static final int tickets_11_t_48=0x7f04017e;
-        public static final int tickets_11_t_49=0x7f04017f;
-        public static final int tickets_11_t_5=0x7f040180;
-        public static final int tickets_11_t_50=0x7f040181;
-        public static final int tickets_11_t_51=0x7f040182;
-        public static final int tickets_11_t_52=0x7f040183;
-        public static final int tickets_11_t_53=0x7f040184;
-        public static final int tickets_11_t_54=0x7f040185;
-        public static final int tickets_11_t_55=0x7f040186;
-        public static final int tickets_11_t_6=0x7f040187;
-        public static final int tickets_11_t_7=0x7f040188;
-        public static final int tickets_11_t_8=0x7f040189;
-        public static final int tickets_11_t_9=0x7f04018a;
-        public static final int tickets_12_t_1=0x7f04018b;
-        public static final int tickets_12_t_10=0x7f04018c;
-        public static final int tickets_12_t_11=0x7f04018d;
-        public static final int tickets_12_t_12=0x7f04018e;
-        public static final int tickets_12_t_13=0x7f04018f;
-        public static final int tickets_12_t_14=0x7f040190;
-        public static final int tickets_12_t_15=0x7f040191;
-        public static final int tickets_12_t_16=0x7f040192;
-        public static final int tickets_12_t_17=0x7f040193;
-        public static final int tickets_12_t_18=0x7f040194;
-        public static final int tickets_12_t_2=0x7f040195;
-        public static final int tickets_12_t_3=0x7f040196;
-        public static final int tickets_12_t_4=0x7f040197;
-        public static final int tickets_12_t_5=0x7f040198;
-        public static final int tickets_12_t_6=0x7f040199;
-        public static final int tickets_12_t_7=0x7f04019a;
-        public static final int tickets_12_t_8=0x7f04019b;
-        public static final int tickets_12_t_9=0x7f04019c;
-        public static final int tickets_13_t_1=0x7f04019d;
-        public static final int tickets_13_t_10=0x7f04019e;
-        public static final int tickets_13_t_11=0x7f04019f;
-        public static final int tickets_13_t_12=0x7f0401a0;
-        public static final int tickets_13_t_13=0x7f0401a1;
-        public static final int tickets_13_t_2=0x7f0401a2;
-        public static final int tickets_13_t_3=0x7f0401a3;
-        public static final int tickets_13_t_4=0x7f0401a4;
-        public static final int tickets_13_t_5=0x7f0401a5;
-        public static final int tickets_13_t_6=0x7f0401a6;
-        public static final int tickets_13_t_7=0x7f0401a7;
-        public static final int tickets_13_t_8=0x7f0401a8;
-        public static final int tickets_13_t_9=0x7f0401a9;
-        public static final int tickets_14_t_1=0x7f0401aa;
-        public static final int tickets_14_t_10=0x7f0401ab;
-        public static final int tickets_14_t_11=0x7f0401ac;
-        public static final int tickets_14_t_12=0x7f0401ad;
-        public static final int tickets_14_t_13=0x7f0401ae;
-        public static final int tickets_14_t_14=0x7f0401af;
-        public static final int tickets_14_t_15=0x7f0401b0;
-        public static final int tickets_14_t_16=0x7f0401b1;
-        public static final int tickets_14_t_17=0x7f0401b2;
-        public static final int tickets_14_t_18=0x7f0401b3;
-        public static final int tickets_14_t_19=0x7f0401b4;
-        public static final int tickets_14_t_2=0x7f0401b5;
-        public static final int tickets_14_t_20=0x7f0401b6;
-        public static final int tickets_14_t_21=0x7f0401b7;
-        public static final int tickets_14_t_22=0x7f0401b8;
-        public static final int tickets_14_t_23=0x7f0401b9;
-        public static final int tickets_14_t_24=0x7f0401ba;
-        public static final int tickets_14_t_25=0x7f0401bb;
-        public static final int tickets_14_t_3=0x7f0401bc;
-        public static final int tickets_14_t_4=0x7f0401bd;
-        public static final int tickets_14_t_5=0x7f0401be;
-        public static final int tickets_14_t_6=0x7f0401bf;
-        public static final int tickets_14_t_7=0x7f0401c0;
-        public static final int tickets_14_t_8=0x7f0401c1;
-        public static final int tickets_14_t_9=0x7f0401c2;
-        public static final int tickets_15_t_1=0x7f0401c3;
-        public static final int tickets_15_t_10=0x7f0401c4;
-        public static final int tickets_15_t_11=0x7f0401c5;
-        public static final int tickets_15_t_12=0x7f0401c6;
-        public static final int tickets_15_t_13=0x7f0401c7;
-        public static final int tickets_15_t_14=0x7f0401c8;
-        public static final int tickets_15_t_15=0x7f0401c9;
-        public static final int tickets_15_t_16=0x7f0401ca;
-        public static final int tickets_15_t_17=0x7f0401cb;
-        public static final int tickets_15_t_18=0x7f0401cc;
-        public static final int tickets_15_t_19=0x7f0401cd;
-        public static final int tickets_15_t_2=0x7f0401ce;
-        public static final int tickets_15_t_20=0x7f0401cf;
-        public static final int tickets_15_t_21=0x7f0401d0;
-        public static final int tickets_15_t_22=0x7f0401d1;
-        public static final int tickets_15_t_23=0x7f0401d2;
-        public static final int tickets_15_t_24=0x7f0401d3;
-        public static final int tickets_15_t_25=0x7f0401d4;
-        public static final int tickets_15_t_26=0x7f0401d5;
-        public static final int tickets_15_t_27=0x7f0401d6;
-        public static final int tickets_15_t_28=0x7f0401d7;
-        public static final int tickets_15_t_29=0x7f0401d8;
-        public static final int tickets_15_t_3=0x7f0401d9;
-        public static final int tickets_15_t_30=0x7f0401da;
-        public static final int tickets_15_t_31=0x7f0401db;
-        public static final int tickets_15_t_32=0x7f0401dc;
-        public static final int tickets_15_t_33=0x7f0401dd;
-        public static final int tickets_15_t_34=0x7f0401de;
-        public static final int tickets_15_t_35=0x7f0401df;
-        public static final int tickets_15_t_36=0x7f0401e0;
-        public static final int tickets_15_t_37=0x7f0401e1;
-        public static final int tickets_15_t_38=0x7f0401e2;
-        public static final int tickets_15_t_39=0x7f0401e3;
-        public static final int tickets_15_t_4=0x7f0401e4;
-        public static final int tickets_15_t_40=0x7f0401e5;
-        public static final int tickets_15_t_41=0x7f0401e6;
-        public static final int tickets_15_t_42=0x7f0401e7;
-        public static final int tickets_15_t_43=0x7f0401e8;
-        public static final int tickets_15_t_44=0x7f0401e9;
-        public static final int tickets_15_t_45=0x7f0401ea;
-        public static final int tickets_15_t_46=0x7f0401eb;
-        public static final int tickets_15_t_47=0x7f0401ec;
-        public static final int tickets_15_t_48=0x7f0401ed;
-        public static final int tickets_15_t_49=0x7f0401ee;
-        public static final int tickets_15_t_5=0x7f0401ef;
-        public static final int tickets_15_t_50=0x7f0401f0;
-        public static final int tickets_15_t_51=0x7f0401f1;
-        public static final int tickets_15_t_52=0x7f0401f2;
-        public static final int tickets_15_t_53=0x7f0401f3;
-        public static final int tickets_15_t_54=0x7f0401f4;
-        public static final int tickets_15_t_55=0x7f0401f5;
-        public static final int tickets_15_t_56=0x7f0401f6;
-        public static final int tickets_15_t_57=0x7f0401f7;
-        public static final int tickets_15_t_58=0x7f0401f8;
-        public static final int tickets_15_t_59=0x7f0401f9;
-        public static final int tickets_15_t_6=0x7f0401fa;
-        public static final int tickets_15_t_60=0x7f0401fb;
-        public static final int tickets_15_t_61=0x7f0401fc;
-        public static final int tickets_15_t_62=0x7f0401fd;
-        public static final int tickets_15_t_63=0x7f0401fe;
-        public static final int tickets_15_t_64=0x7f0401ff;
-        public static final int tickets_15_t_65=0x7f040200;
-        public static final int tickets_15_t_7=0x7f040201;
-        public static final int tickets_15_t_8=0x7f040202;
-        public static final int tickets_15_t_9=0x7f040203;
-        public static final int tickets_16_t_1=0x7f040204;
-        public static final int tickets_16_t_10=0x7f040205;
-        public static final int tickets_16_t_11=0x7f040206;
-        public static final int tickets_16_t_12=0x7f040207;
-        public static final int tickets_16_t_13=0x7f040208;
-        public static final int tickets_16_t_14=0x7f040209;
-        public static final int tickets_16_t_15=0x7f04020a;
-        public static final int tickets_16_t_16=0x7f04020b;
-        public static final int tickets_16_t_17=0x7f04020c;
-        public static final int tickets_16_t_18=0x7f04020d;
-        public static final int tickets_16_t_19=0x7f04020e;
-        public static final int tickets_16_t_2=0x7f04020f;
-        public static final int tickets_16_t_20=0x7f040210;
-        public static final int tickets_16_t_21=0x7f040211;
-        public static final int tickets_16_t_22=0x7f040212;
-        public static final int tickets_16_t_23=0x7f040213;
-        public static final int tickets_16_t_24=0x7f040214;
-        public static final int tickets_16_t_25=0x7f040215;
-        public static final int tickets_16_t_26=0x7f040216;
-        public static final int tickets_16_t_27=0x7f040217;
-        public static final int tickets_16_t_28=0x7f040218;
-        public static final int tickets_16_t_29=0x7f040219;
-        public static final int tickets_16_t_3=0x7f04021a;
-        public static final int tickets_16_t_30=0x7f04021b;
-        public static final int tickets_16_t_31=0x7f04021c;
-        public static final int tickets_16_t_32=0x7f04021d;
-        public static final int tickets_16_t_33=0x7f04021e;
-        public static final int tickets_16_t_34=0x7f04021f;
-        public static final int tickets_16_t_35=0x7f040220;
-        public static final int tickets_16_t_36=0x7f040221;
-        public static final int tickets_16_t_37=0x7f040222;
-        public static final int tickets_16_t_38=0x7f040223;
-        public static final int tickets_16_t_39=0x7f040224;
-        public static final int tickets_16_t_4=0x7f040225;
-        public static final int tickets_16_t_40=0x7f040226;
-        public static final int tickets_16_t_41=0x7f040227;
-        public static final int tickets_16_t_42=0x7f040228;
-        public static final int tickets_16_t_43=0x7f040229;
-        public static final int tickets_16_t_5=0x7f04022a;
-        public static final int tickets_16_t_6=0x7f04022b;
-        public static final int tickets_16_t_7=0x7f04022c;
-        public static final int tickets_16_t_8=0x7f04022d;
-        public static final int tickets_16_t_9=0x7f04022e;
-        public static final int tickets_17_t_1=0x7f04022f;
-        public static final int tickets_17_t_10=0x7f040230;
-        public static final int tickets_17_t_11=0x7f040231;
-        public static final int tickets_17_t_12=0x7f040232;
-        public static final int tickets_17_t_13=0x7f040233;
-        public static final int tickets_17_t_14=0x7f040234;
-        public static final int tickets_17_t_15=0x7f040235;
-        public static final int tickets_17_t_16=0x7f040236;
-        public static final int tickets_17_t_17=0x7f040237;
-        public static final int tickets_17_t_18=0x7f040238;
-        public static final int tickets_17_t_19=0x7f040239;
-        public static final int tickets_17_t_2=0x7f04023a;
-        public static final int tickets_17_t_20=0x7f04023b;
-        public static final int tickets_17_t_21=0x7f04023c;
-        public static final int tickets_17_t_22=0x7f04023d;
-        public static final int tickets_17_t_23=0x7f04023e;
-        public static final int tickets_17_t_24=0x7f04023f;
-        public static final int tickets_17_t_25=0x7f040240;
-        public static final int tickets_17_t_26=0x7f040241;
-        public static final int tickets_17_t_27=0x7f040242;
-        public static final int tickets_17_t_28=0x7f040243;
-        public static final int tickets_17_t_29=0x7f040244;
-        public static final int tickets_17_t_3=0x7f040245;
-        public static final int tickets_17_t_30=0x7f040246;
-        public static final int tickets_17_t_31=0x7f040247;
-        public static final int tickets_17_t_32=0x7f040248;
-        public static final int tickets_17_t_33=0x7f040249;
-        public static final int tickets_17_t_4=0x7f04024a;
-        public static final int tickets_17_t_5=0x7f04024b;
-        public static final int tickets_17_t_6=0x7f04024c;
-        public static final int tickets_17_t_7=0x7f04024d;
-        public static final int tickets_17_t_8=0x7f04024e;
-        public static final int tickets_17_t_9=0x7f04024f;
-        public static final int tickets_18_t_1=0x7f040250;
-        public static final int tickets_18_t_10=0x7f040251;
-        public static final int tickets_18_t_11=0x7f040252;
-        public static final int tickets_18_t_12=0x7f040253;
-        public static final int tickets_18_t_13=0x7f040254;
-        public static final int tickets_18_t_14=0x7f040255;
-        public static final int tickets_18_t_15=0x7f040256;
-        public static final int tickets_18_t_16=0x7f040257;
-        public static final int tickets_18_t_17=0x7f040258;
-        public static final int tickets_18_t_18=0x7f040259;
-        public static final int tickets_18_t_2=0x7f04025a;
-        public static final int tickets_18_t_3=0x7f04025b;
-        public static final int tickets_18_t_4=0x7f04025c;
-        public static final int tickets_18_t_5=0x7f04025d;
-        public static final int tickets_18_t_6=0x7f04025e;
-        public static final int tickets_18_t_7=0x7f04025f;
-        public static final int tickets_18_t_8=0x7f040260;
-        public static final int tickets_18_t_9=0x7f040261;
-        public static final int tickets_19_t_1=0x7f040262;
-        public static final int tickets_19_t_10=0x7f040263;
-        public static final int tickets_19_t_11=0x7f040264;
-        public static final int tickets_19_t_12=0x7f040265;
-        public static final int tickets_19_t_13=0x7f040266;
-        public static final int tickets_19_t_14=0x7f040267;
-        public static final int tickets_19_t_15=0x7f040268;
-        public static final int tickets_19_t_16=0x7f040269;
-        public static final int tickets_19_t_17=0x7f04026a;
-        public static final int tickets_19_t_18=0x7f04026b;
-        public static final int tickets_19_t_19=0x7f04026c;
-        public static final int tickets_19_t_2=0x7f04026d;
-        public static final int tickets_19_t_20=0x7f04026e;
-        public static final int tickets_19_t_21=0x7f04026f;
-        public static final int tickets_19_t_22=0x7f040270;
-        public static final int tickets_19_t_23=0x7f040271;
-        public static final int tickets_19_t_24=0x7f040272;
-        public static final int tickets_19_t_25=0x7f040273;
-        public static final int tickets_19_t_26=0x7f040274;
-        public static final int tickets_19_t_27=0x7f040275;
-        public static final int tickets_19_t_28=0x7f040276;
-        public static final int tickets_19_t_29=0x7f040277;
-        public static final int tickets_19_t_3=0x7f040278;
-        public static final int tickets_19_t_30=0x7f040279;
-        public static final int tickets_19_t_31=0x7f04027a;
-        public static final int tickets_19_t_32=0x7f04027b;
-        public static final int tickets_19_t_33=0x7f04027c;
-        public static final int tickets_19_t_34=0x7f04027d;
-        public static final int tickets_19_t_35=0x7f04027e;
-        public static final int tickets_19_t_36=0x7f04027f;
-        public static final int tickets_19_t_37=0x7f040280;
-        public static final int tickets_19_t_38=0x7f040281;
-        public static final int tickets_19_t_39=0x7f040282;
-        public static final int tickets_19_t_4=0x7f040283;
-        public static final int tickets_19_t_5=0x7f040284;
-        public static final int tickets_19_t_6=0x7f040285;
-        public static final int tickets_19_t_7=0x7f040286;
-        public static final int tickets_19_t_8=0x7f040287;
-        public static final int tickets_19_t_9=0x7f040288;
-        public static final int tickets_1_t_1=0x7f040289;
-        public static final int tickets_1_t_10=0x7f04028a;
-        public static final int tickets_1_t_11=0x7f04028b;
-        public static final int tickets_1_t_12=0x7f04028c;
-        public static final int tickets_1_t_13=0x7f04028d;
-        public static final int tickets_1_t_14=0x7f04028e;
-        public static final int tickets_1_t_15=0x7f04028f;
-        public static final int tickets_1_t_16=0x7f040290;
-        public static final int tickets_1_t_17=0x7f040291;
-        public static final int tickets_1_t_18=0x7f040292;
-        public static final int tickets_1_t_19=0x7f040293;
-        public static final int tickets_1_t_2=0x7f040294;
-        public static final int tickets_1_t_20=0x7f040295;
-        public static final int tickets_1_t_21=0x7f040296;
-        public static final int tickets_1_t_22=0x7f040297;
-        public static final int tickets_1_t_23=0x7f040298;
-        public static final int tickets_1_t_24=0x7f040299;
-        public static final int tickets_1_t_25=0x7f04029a;
-        public static final int tickets_1_t_26=0x7f04029b;
-        public static final int tickets_1_t_27=0x7f04029c;
-        public static final int tickets_1_t_28=0x7f04029d;
-        public static final int tickets_1_t_29=0x7f04029e;
-        public static final int tickets_1_t_3=0x7f04029f;
-        public static final int tickets_1_t_30=0x7f0402a0;
-        public static final int tickets_1_t_31=0x7f0402a1;
-        public static final int tickets_1_t_32=0x7f0402a2;
-        public static final int tickets_1_t_33=0x7f0402a3;
-        public static final int tickets_1_t_34=0x7f0402a4;
-        public static final int tickets_1_t_35=0x7f0402a5;
-        public static final int tickets_1_t_36=0x7f0402a6;
-        public static final int tickets_1_t_37=0x7f0402a7;
-        public static final int tickets_1_t_38=0x7f0402a8;
-        public static final int tickets_1_t_39=0x7f0402a9;
-        public static final int tickets_1_t_4=0x7f0402aa;
-        public static final int tickets_1_t_40=0x7f0402ab;
-        public static final int tickets_1_t_41=0x7f0402ac;
-        public static final int tickets_1_t_42=0x7f0402ad;
-        public static final int tickets_1_t_5=0x7f0402ae;
-        public static final int tickets_1_t_6=0x7f0402af;
-        public static final int tickets_1_t_7=0x7f0402b0;
-        public static final int tickets_1_t_8=0x7f0402b1;
-        public static final int tickets_1_t_9=0x7f0402b2;
-        public static final int tickets_20_t_1=0x7f0402b3;
-        public static final int tickets_20_t_10=0x7f0402b4;
-        public static final int tickets_20_t_11=0x7f0402b5;
-        public static final int tickets_20_t_12=0x7f0402b6;
-        public static final int tickets_20_t_13=0x7f0402b7;
-        public static final int tickets_20_t_14=0x7f0402b8;
-        public static final int tickets_20_t_15=0x7f0402b9;
-        public static final int tickets_20_t_16=0x7f0402ba;
-        public static final int tickets_20_t_17=0x7f0402bb;
-        public static final int tickets_20_t_18=0x7f0402bc;
-        public static final int tickets_20_t_19=0x7f0402bd;
-        public static final int tickets_20_t_2=0x7f0402be;
-        public static final int tickets_20_t_20=0x7f0402bf;
-        public static final int tickets_20_t_21=0x7f0402c0;
-        public static final int tickets_20_t_22=0x7f0402c1;
-        public static final int tickets_20_t_23=0x7f0402c2;
-        public static final int tickets_20_t_24=0x7f0402c3;
-        public static final int tickets_20_t_25=0x7f0402c4;
-        public static final int tickets_20_t_26=0x7f0402c5;
-        public static final int tickets_20_t_27=0x7f0402c6;
-        public static final int tickets_20_t_28=0x7f0402c7;
-        public static final int tickets_20_t_29=0x7f0402c8;
-        public static final int tickets_20_t_3=0x7f0402c9;
-        public static final int tickets_20_t_30=0x7f0402ca;
-        public static final int tickets_20_t_31=0x7f0402cb;
-        public static final int tickets_20_t_32=0x7f0402cc;
-        public static final int tickets_20_t_33=0x7f0402cd;
-        public static final int tickets_20_t_34=0x7f0402ce;
-        public static final int tickets_20_t_35=0x7f0402cf;
-        public static final int tickets_20_t_36=0x7f0402d0;
-        public static final int tickets_20_t_37=0x7f0402d1;
-        public static final int tickets_20_t_38=0x7f0402d2;
-        public static final int tickets_20_t_39=0x7f0402d3;
-        public static final int tickets_20_t_4=0x7f0402d4;
-        public static final int tickets_20_t_40=0x7f0402d5;
-        public static final int tickets_20_t_41=0x7f0402d6;
-        public static final int tickets_20_t_42=0x7f0402d7;
-        public static final int tickets_20_t_43=0x7f0402d8;
-        public static final int tickets_20_t_44=0x7f0402d9;
-        public static final int tickets_20_t_45=0x7f0402da;
-        public static final int tickets_20_t_46=0x7f0402db;
-        public static final int tickets_20_t_47=0x7f0402dc;
-        public static final int tickets_20_t_48=0x7f0402dd;
-        public static final int tickets_20_t_49=0x7f0402de;
-        public static final int tickets_20_t_5=0x7f0402df;
-        public static final int tickets_20_t_50=0x7f0402e0;
-        public static final int tickets_20_t_51=0x7f0402e1;
-        public static final int tickets_20_t_52=0x7f0402e2;
-        public static final int tickets_20_t_53=0x7f0402e3;
-        public static final int tickets_20_t_54=0x7f0402e4;
-        public static final int tickets_20_t_55=0x7f0402e5;
-        public static final int tickets_20_t_56=0x7f0402e6;
-        public static final int tickets_20_t_57=0x7f0402e7;
-        public static final int tickets_20_t_58=0x7f0402e8;
-        public static final int tickets_20_t_59=0x7f0402e9;
-        public static final int tickets_20_t_6=0x7f0402ea;
-        public static final int tickets_20_t_60=0x7f0402eb;
-        public static final int tickets_20_t_61=0x7f0402ec;
-        public static final int tickets_20_t_62=0x7f0402ed;
-        public static final int tickets_20_t_63=0x7f0402ee;
-        public static final int tickets_20_t_64=0x7f0402ef;
-        public static final int tickets_20_t_65=0x7f0402f0;
-        public static final int tickets_20_t_66=0x7f0402f1;
-        public static final int tickets_20_t_67=0x7f0402f2;
-        public static final int tickets_20_t_68=0x7f0402f3;
-        public static final int tickets_20_t_69=0x7f0402f4;
-        public static final int tickets_20_t_7=0x7f0402f5;
-        public static final int tickets_20_t_70=0x7f0402f6;
-        public static final int tickets_20_t_71=0x7f0402f7;
-        public static final int tickets_20_t_72=0x7f0402f8;
-        public static final int tickets_20_t_73=0x7f0402f9;
-        public static final int tickets_20_t_74=0x7f0402fa;
-        public static final int tickets_20_t_75=0x7f0402fb;
-        public static final int tickets_20_t_76=0x7f0402fc;
-        public static final int tickets_20_t_77=0x7f0402fd;
-        public static final int tickets_20_t_78=0x7f0402fe;
-        public static final int tickets_20_t_79=0x7f0402ff;
-        public static final int tickets_20_t_8=0x7f040300;
-        public static final int tickets_20_t_80=0x7f040301;
-        public static final int tickets_20_t_81=0x7f040302;
-        public static final int tickets_20_t_82=0x7f040303;
-        public static final int tickets_20_t_83=0x7f040304;
-        public static final int tickets_20_t_84=0x7f040305;
-        public static final int tickets_20_t_85=0x7f040306;
-        public static final int tickets_20_t_86=0x7f040307;
-        public static final int tickets_20_t_87=0x7f040308;
-        public static final int tickets_20_t_88=0x7f040309;
-        public static final int tickets_20_t_9=0x7f04030a;
-        public static final int tickets_21_t_1=0x7f04030b;
-        public static final int tickets_21_t_10=0x7f04030c;
-        public static final int tickets_21_t_11=0x7f04030d;
-        public static final int tickets_21_t_12=0x7f04030e;
-        public static final int tickets_21_t_13=0x7f04030f;
-        public static final int tickets_21_t_14=0x7f040310;
-        public static final int tickets_21_t_15=0x7f040311;
-        public static final int tickets_21_t_16=0x7f040312;
-        public static final int tickets_21_t_17=0x7f040313;
-        public static final int tickets_21_t_18=0x7f040314;
-        public static final int tickets_21_t_19=0x7f040315;
-        public static final int tickets_21_t_2=0x7f040316;
-        public static final int tickets_21_t_20=0x7f040317;
-        public static final int tickets_21_t_21=0x7f040318;
-        public static final int tickets_21_t_22=0x7f040319;
-        public static final int tickets_21_t_23=0x7f04031a;
-        public static final int tickets_21_t_24=0x7f04031b;
-        public static final int tickets_21_t_25=0x7f04031c;
-        public static final int tickets_21_t_3=0x7f04031d;
-        public static final int tickets_21_t_4=0x7f04031e;
-        public static final int tickets_21_t_5=0x7f04031f;
-        public static final int tickets_21_t_6=0x7f040320;
-        public static final int tickets_21_t_7=0x7f040321;
-        public static final int tickets_21_t_8=0x7f040322;
-        public static final int tickets_21_t_9=0x7f040323;
-        public static final int tickets_22_t_1=0x7f040324;
-        public static final int tickets_22_t_10=0x7f040325;
-        public static final int tickets_22_t_11=0x7f040326;
-        public static final int tickets_22_t_12=0x7f040327;
-        public static final int tickets_22_t_13=0x7f040328;
-        public static final int tickets_22_t_14=0x7f040329;
-        public static final int tickets_22_t_15=0x7f04032a;
-        public static final int tickets_22_t_2=0x7f04032b;
-        public static final int tickets_22_t_3=0x7f04032c;
-        public static final int tickets_22_t_4=0x7f04032d;
-        public static final int tickets_22_t_5=0x7f04032e;
-        public static final int tickets_22_t_6=0x7f04032f;
-        public static final int tickets_22_t_7=0x7f040330;
-        public static final int tickets_22_t_8=0x7f040331;
-        public static final int tickets_22_t_9=0x7f040332;
-        public static final int tickets_23_t_1=0x7f040333;
-        public static final int tickets_23_t_10=0x7f040334;
-        public static final int tickets_23_t_11=0x7f040335;
-        public static final int tickets_23_t_12=0x7f040336;
-        public static final int tickets_23_t_13=0x7f040337;
-        public static final int tickets_23_t_14=0x7f040338;
-        public static final int tickets_23_t_15=0x7f040339;
-        public static final int tickets_23_t_16=0x7f04033a;
-        public static final int tickets_23_t_17=0x7f04033b;
-        public static final int tickets_23_t_18=0x7f04033c;
-        public static final int tickets_23_t_19=0x7f04033d;
-        public static final int tickets_23_t_2=0x7f04033e;
-        public static final int tickets_23_t_3=0x7f04033f;
-        public static final int tickets_23_t_4=0x7f040340;
-        public static final int tickets_23_t_5=0x7f040341;
-        public static final int tickets_23_t_6=0x7f040342;
-        public static final int tickets_23_t_7=0x7f040343;
-        public static final int tickets_23_t_8=0x7f040344;
-        public static final int tickets_23_t_9=0x7f040345;
-        public static final int tickets_24_t_1=0x7f040346;
-        public static final int tickets_24_t_10=0x7f040347;
-        public static final int tickets_24_t_11=0x7f040348;
-        public static final int tickets_24_t_12=0x7f040349;
-        public static final int tickets_24_t_13=0x7f04034a;
-        public static final int tickets_24_t_14=0x7f04034b;
-        public static final int tickets_24_t_15=0x7f04034c;
-        public static final int tickets_24_t_16=0x7f04034d;
-        public static final int tickets_24_t_17=0x7f04034e;
-        public static final int tickets_24_t_18=0x7f04034f;
-        public static final int tickets_24_t_19=0x7f040350;
-        public static final int tickets_24_t_2=0x7f040351;
-        public static final int tickets_24_t_20=0x7f040352;
-        public static final int tickets_24_t_3=0x7f040353;
-        public static final int tickets_24_t_4=0x7f040354;
-        public static final int tickets_24_t_5=0x7f040355;
-        public static final int tickets_24_t_6=0x7f040356;
-        public static final int tickets_24_t_7=0x7f040357;
-        public static final int tickets_24_t_8=0x7f040358;
-        public static final int tickets_24_t_9=0x7f040359;
-        public static final int tickets_25_t_1=0x7f04035a;
-        public static final int tickets_25_t_10=0x7f04035b;
-        public static final int tickets_25_t_11=0x7f04035c;
-        public static final int tickets_25_t_12=0x7f04035d;
-        public static final int tickets_25_t_13=0x7f04035e;
-        public static final int tickets_25_t_14=0x7f04035f;
-        public static final int tickets_25_t_15=0x7f040360;
-        public static final int tickets_25_t_16=0x7f040361;
-        public static final int tickets_25_t_17=0x7f040362;
-        public static final int tickets_25_t_18=0x7f040363;
-        public static final int tickets_25_t_19=0x7f040364;
-        public static final int tickets_25_t_2=0x7f040365;
-        public static final int tickets_25_t_20=0x7f040366;
-        public static final int tickets_25_t_21=0x7f040367;
-        public static final int tickets_25_t_22=0x7f040368;
-        public static final int tickets_25_t_23=0x7f040369;
-        public static final int tickets_25_t_24=0x7f04036a;
-        public static final int tickets_25_t_25=0x7f04036b;
-        public static final int tickets_25_t_26=0x7f04036c;
-        public static final int tickets_25_t_27=0x7f04036d;
-        public static final int tickets_25_t_3=0x7f04036e;
-        public static final int tickets_25_t_4=0x7f04036f;
-        public static final int tickets_25_t_5=0x7f040370;
-        public static final int tickets_25_t_6=0x7f040371;
-        public static final int tickets_25_t_7=0x7f040372;
-        public static final int tickets_25_t_8=0x7f040373;
-        public static final int tickets_25_t_9=0x7f040374;
-        public static final int tickets_26_t_1=0x7f040375;
-        public static final int tickets_26_t_10=0x7f040376;
-        public static final int tickets_26_t_11=0x7f040377;
-        public static final int tickets_26_t_12=0x7f040378;
-        public static final int tickets_26_t_13=0x7f040379;
-        public static final int tickets_26_t_14=0x7f04037a;
-        public static final int tickets_26_t_15=0x7f04037b;
-        public static final int tickets_26_t_2=0x7f04037c;
-        public static final int tickets_26_t_3=0x7f04037d;
-        public static final int tickets_26_t_4=0x7f04037e;
-        public static final int tickets_26_t_5=0x7f04037f;
-        public static final int tickets_26_t_6=0x7f040380;
-        public static final int tickets_26_t_7=0x7f040381;
-        public static final int tickets_26_t_8=0x7f040382;
-        public static final int tickets_26_t_9=0x7f040383;
-        public static final int tickets_27_t_1=0x7f040384;
-        public static final int tickets_27_t_10=0x7f040385;
-        public static final int tickets_27_t_11=0x7f040386;
-        public static final int tickets_27_t_12=0x7f040387;
-        public static final int tickets_27_t_13=0x7f040388;
-        public static final int tickets_27_t_14=0x7f040389;
-        public static final int tickets_27_t_15=0x7f04038a;
-        public static final int tickets_27_t_16=0x7f04038b;
-        public static final int tickets_27_t_17=0x7f04038c;
-        public static final int tickets_27_t_18=0x7f04038d;
-        public static final int tickets_27_t_19=0x7f04038e;
-        public static final int tickets_27_t_2=0x7f04038f;
-        public static final int tickets_27_t_20=0x7f040390;
-        public static final int tickets_27_t_21=0x7f040391;
-        public static final int tickets_27_t_22=0x7f040392;
-        public static final int tickets_27_t_23=0x7f040393;
-        public static final int tickets_27_t_3=0x7f040394;
-        public static final int tickets_27_t_4=0x7f040395;
-        public static final int tickets_27_t_5=0x7f040396;
-        public static final int tickets_27_t_6=0x7f040397;
-        public static final int tickets_27_t_7=0x7f040398;
-        public static final int tickets_27_t_8=0x7f040399;
-        public static final int tickets_27_t_9=0x7f04039a;
-        public static final int tickets_28_t_1=0x7f04039b;
-        public static final int tickets_28_t_10=0x7f04039c;
-        public static final int tickets_28_t_11=0x7f04039d;
-        public static final int tickets_28_t_12=0x7f04039e;
-        public static final int tickets_28_t_13=0x7f04039f;
-        public static final int tickets_28_t_14=0x7f0403a0;
-        public static final int tickets_28_t_15=0x7f0403a1;
-        public static final int tickets_28_t_16=0x7f0403a2;
-        public static final int tickets_28_t_17=0x7f0403a3;
-        public static final int tickets_28_t_18=0x7f0403a4;
-        public static final int tickets_28_t_19=0x7f0403a5;
-        public static final int tickets_28_t_2=0x7f0403a6;
-        public static final int tickets_28_t_20=0x7f0403a7;
-        public static final int tickets_28_t_21=0x7f0403a8;
-        public static final int tickets_28_t_22=0x7f0403a9;
-        public static final int tickets_28_t_23=0x7f0403aa;
-        public static final int tickets_28_t_24=0x7f0403ab;
-        public static final int tickets_28_t_25=0x7f0403ac;
-        public static final int tickets_28_t_26=0x7f0403ad;
-        public static final int tickets_28_t_27=0x7f0403ae;
-        public static final int tickets_28_t_28=0x7f0403af;
-        public static final int tickets_28_t_29=0x7f0403b0;
-        public static final int tickets_28_t_3=0x7f0403b1;
-        public static final int tickets_28_t_30=0x7f0403b2;
-        public static final int tickets_28_t_31=0x7f0403b3;
-        public static final int tickets_28_t_32=0x7f0403b4;
-        public static final int tickets_28_t_33=0x7f0403b5;
-        public static final int tickets_28_t_34=0x7f0403b6;
-        public static final int tickets_28_t_35=0x7f0403b7;
-        public static final int tickets_28_t_36=0x7f0403b8;
-        public static final int tickets_28_t_37=0x7f0403b9;
-        public static final int tickets_28_t_38=0x7f0403ba;
-        public static final int tickets_28_t_39=0x7f0403bb;
-        public static final int tickets_28_t_4=0x7f0403bc;
-        public static final int tickets_28_t_40=0x7f0403bd;
-        public static final int tickets_28_t_41=0x7f0403be;
-        public static final int tickets_28_t_42=0x7f0403bf;
-        public static final int tickets_28_t_43=0x7f0403c0;
-        public static final int tickets_28_t_44=0x7f0403c1;
-        public static final int tickets_28_t_45=0x7f0403c2;
-        public static final int tickets_28_t_46=0x7f0403c3;
-        public static final int tickets_28_t_47=0x7f0403c4;
-        public static final int tickets_28_t_48=0x7f0403c5;
-        public static final int tickets_28_t_5=0x7f0403c6;
-        public static final int tickets_28_t_6=0x7f0403c7;
-        public static final int tickets_28_t_7=0x7f0403c8;
-        public static final int tickets_28_t_8=0x7f0403c9;
-        public static final int tickets_28_t_9=0x7f0403ca;
-        public static final int tickets_29_t_1=0x7f0403cb;
-        public static final int tickets_29_t_10=0x7f0403cc;
-        public static final int tickets_29_t_11=0x7f0403cd;
-        public static final int tickets_29_t_12=0x7f0403ce;
-        public static final int tickets_29_t_13=0x7f0403cf;
-        public static final int tickets_29_t_14=0x7f0403d0;
-        public static final int tickets_29_t_15=0x7f0403d1;
-        public static final int tickets_29_t_16=0x7f0403d2;
-        public static final int tickets_29_t_17=0x7f0403d3;
-        public static final int tickets_29_t_18=0x7f0403d4;
-        public static final int tickets_29_t_19=0x7f0403d5;
-        public static final int tickets_29_t_2=0x7f0403d6;
-        public static final int tickets_29_t_20=0x7f0403d7;
-        public static final int tickets_29_t_21=0x7f0403d8;
-        public static final int tickets_29_t_22=0x7f0403d9;
-        public static final int tickets_29_t_23=0x7f0403da;
-        public static final int tickets_29_t_24=0x7f0403db;
-        public static final int tickets_29_t_25=0x7f0403dc;
-        public static final int tickets_29_t_3=0x7f0403dd;
-        public static final int tickets_29_t_4=0x7f0403de;
-        public static final int tickets_29_t_5=0x7f0403df;
-        public static final int tickets_29_t_6=0x7f0403e0;
-        public static final int tickets_29_t_7=0x7f0403e1;
-        public static final int tickets_29_t_8=0x7f0403e2;
-        public static final int tickets_29_t_9=0x7f0403e3;
-        public static final int tickets_2_t_1=0x7f0403e4;
-        public static final int tickets_2_t_10=0x7f0403e5;
-        public static final int tickets_2_t_11=0x7f0403e6;
-        public static final int tickets_2_t_12=0x7f0403e7;
-        public static final int tickets_2_t_13=0x7f0403e8;
-        public static final int tickets_2_t_14=0x7f0403e9;
-        public static final int tickets_2_t_15=0x7f0403ea;
-        public static final int tickets_2_t_16=0x7f0403eb;
-        public static final int tickets_2_t_17=0x7f0403ec;
-        public static final int tickets_2_t_18=0x7f0403ed;
-        public static final int tickets_2_t_19=0x7f0403ee;
-        public static final int tickets_2_t_2=0x7f0403ef;
-        public static final int tickets_2_t_3=0x7f0403f0;
-        public static final int tickets_2_t_4=0x7f0403f1;
-        public static final int tickets_2_t_5=0x7f0403f2;
-        public static final int tickets_2_t_6=0x7f0403f3;
-        public static final int tickets_2_t_7=0x7f0403f4;
-        public static final int tickets_2_t_8=0x7f0403f5;
-        public static final int tickets_2_t_9=0x7f0403f6;
-        public static final int tickets_30_t_1=0x7f0403f7;
-        public static final int tickets_30_t_10=0x7f0403f8;
-        public static final int tickets_30_t_11=0x7f0403f9;
-        public static final int tickets_30_t_12=0x7f0403fa;
-        public static final int tickets_30_t_13=0x7f0403fb;
-        public static final int tickets_30_t_14=0x7f0403fc;
-        public static final int tickets_30_t_15=0x7f0403fd;
-        public static final int tickets_30_t_16=0x7f0403fe;
-        public static final int tickets_30_t_17=0x7f0403ff;
-        public static final int tickets_30_t_18=0x7f040400;
-        public static final int tickets_30_t_19=0x7f040401;
-        public static final int tickets_30_t_2=0x7f040402;
-        public static final int tickets_30_t_20=0x7f040403;
-        public static final int tickets_30_t_21=0x7f040404;
-        public static final int tickets_30_t_22=0x7f040405;
-        public static final int tickets_30_t_23=0x7f040406;
-        public static final int tickets_30_t_24=0x7f040407;
-        public static final int tickets_30_t_25=0x7f040408;
-        public static final int tickets_30_t_26=0x7f040409;
-        public static final int tickets_30_t_27=0x7f04040a;
-        public static final int tickets_30_t_28=0x7f04040b;
-        public static final int tickets_30_t_29=0x7f04040c;
-        public static final int tickets_30_t_3=0x7f04040d;
-        public static final int tickets_30_t_30=0x7f04040e;
-        public static final int tickets_30_t_31=0x7f04040f;
-        public static final int tickets_30_t_32=0x7f040410;
-        public static final int tickets_30_t_33=0x7f040411;
-        public static final int tickets_30_t_34=0x7f040412;
-        public static final int tickets_30_t_35=0x7f040413;
-        public static final int tickets_30_t_36=0x7f040414;
-        public static final int tickets_30_t_37=0x7f040415;
-        public static final int tickets_30_t_38=0x7f040416;
-        public static final int tickets_30_t_39=0x7f040417;
-        public static final int tickets_30_t_4=0x7f040418;
-        public static final int tickets_30_t_40=0x7f040419;
-        public static final int tickets_30_t_41=0x7f04041a;
-        public static final int tickets_30_t_42=0x7f04041b;
-        public static final int tickets_30_t_43=0x7f04041c;
-        public static final int tickets_30_t_44=0x7f04041d;
-        public static final int tickets_30_t_45=0x7f04041e;
-        public static final int tickets_30_t_46=0x7f04041f;
-        public static final int tickets_30_t_47=0x7f040420;
-        public static final int tickets_30_t_48=0x7f040421;
-        public static final int tickets_30_t_49=0x7f040422;
-        public static final int tickets_30_t_5=0x7f040423;
-        public static final int tickets_30_t_50=0x7f040424;
-        public static final int tickets_30_t_51=0x7f040425;
-        public static final int tickets_30_t_52=0x7f040426;
-        public static final int tickets_30_t_53=0x7f040427;
-        public static final int tickets_30_t_54=0x7f040428;
-        public static final int tickets_30_t_55=0x7f040429;
-        public static final int tickets_30_t_6=0x7f04042a;
-        public static final int tickets_30_t_7=0x7f04042b;
-        public static final int tickets_30_t_8=0x7f04042c;
-        public static final int tickets_30_t_9=0x7f04042d;
-        public static final int tickets_3_t_1=0x7f04042e;
-        public static final int tickets_3_t_10=0x7f04042f;
-        public static final int tickets_3_t_11=0x7f040430;
-        public static final int tickets_3_t_12=0x7f040431;
-        public static final int tickets_3_t_13=0x7f040432;
-        public static final int tickets_3_t_14=0x7f040433;
-        public static final int tickets_3_t_15=0x7f040434;
-        public static final int tickets_3_t_16=0x7f040435;
-        public static final int tickets_3_t_17=0x7f040436;
-        public static final int tickets_3_t_18=0x7f040437;
-        public static final int tickets_3_t_19=0x7f040438;
-        public static final int tickets_3_t_2=0x7f040439;
-        public static final int tickets_3_t_20=0x7f04043a;
-        public static final int tickets_3_t_21=0x7f04043b;
-        public static final int tickets_3_t_22=0x7f04043c;
-        public static final int tickets_3_t_23=0x7f04043d;
-        public static final int tickets_3_t_24=0x7f04043e;
-        public static final int tickets_3_t_25=0x7f04043f;
-        public static final int tickets_3_t_26=0x7f040440;
-        public static final int tickets_3_t_27=0x7f040441;
-        public static final int tickets_3_t_3=0x7f040442;
-        public static final int tickets_3_t_4=0x7f040443;
-        public static final int tickets_3_t_5=0x7f040444;
-        public static final int tickets_3_t_6=0x7f040445;
-        public static final int tickets_3_t_7=0x7f040446;
-        public static final int tickets_3_t_8=0x7f040447;
-        public static final int tickets_3_t_9=0x7f040448;
-        public static final int tickets_4_t_1=0x7f040449;
-        public static final int tickets_4_t_10=0x7f04044a;
-        public static final int tickets_4_t_11=0x7f04044b;
-        public static final int tickets_4_t_12=0x7f04044c;
-        public static final int tickets_4_t_13=0x7f04044d;
-        public static final int tickets_4_t_14=0x7f04044e;
-        public static final int tickets_4_t_15=0x7f04044f;
-        public static final int tickets_4_t_16=0x7f040450;
-        public static final int tickets_4_t_17=0x7f040451;
-        public static final int tickets_4_t_18=0x7f040452;
-        public static final int tickets_4_t_2=0x7f040453;
-        public static final int tickets_4_t_3=0x7f040454;
-        public static final int tickets_4_t_4=0x7f040455;
-        public static final int tickets_4_t_5=0x7f040456;
-        public static final int tickets_4_t_6=0x7f040457;
-        public static final int tickets_4_t_7=0x7f040458;
-        public static final int tickets_4_t_8=0x7f040459;
-        public static final int tickets_4_t_9=0x7f04045a;
-        public static final int tickets_5_t_1=0x7f04045b;
-        public static final int tickets_5_t_10=0x7f04045c;
-        public static final int tickets_5_t_11=0x7f04045d;
-        public static final int tickets_5_t_12=0x7f04045e;
-        public static final int tickets_5_t_13=0x7f04045f;
-        public static final int tickets_5_t_14=0x7f040460;
-        public static final int tickets_5_t_15=0x7f040461;
-        public static final int tickets_5_t_16=0x7f040462;
-        public static final int tickets_5_t_17=0x7f040463;
-        public static final int tickets_5_t_18=0x7f040464;
-        public static final int tickets_5_t_19=0x7f040465;
-        public static final int tickets_5_t_2=0x7f040466;
-        public static final int tickets_5_t_20=0x7f040467;
-        public static final int tickets_5_t_21=0x7f040468;
-        public static final int tickets_5_t_22=0x7f040469;
-        public static final int tickets_5_t_23=0x7f04046a;
-        public static final int tickets_5_t_24=0x7f04046b;
-        public static final int tickets_5_t_25=0x7f04046c;
-        public static final int tickets_5_t_26=0x7f04046d;
-        public static final int tickets_5_t_27=0x7f04046e;
-        public static final int tickets_5_t_28=0x7f04046f;
-        public static final int tickets_5_t_29=0x7f040470;
-        public static final int tickets_5_t_3=0x7f040471;
-        public static final int tickets_5_t_30=0x7f040472;
-        public static final int tickets_5_t_31=0x7f040473;
-        public static final int tickets_5_t_32=0x7f040474;
-        public static final int tickets_5_t_33=0x7f040475;
-        public static final int tickets_5_t_34=0x7f040476;
-        public static final int tickets_5_t_35=0x7f040477;
-        public static final int tickets_5_t_36=0x7f040478;
-        public static final int tickets_5_t_37=0x7f040479;
-        public static final int tickets_5_t_38=0x7f04047a;
-        public static final int tickets_5_t_39=0x7f04047b;
-        public static final int tickets_5_t_4=0x7f04047c;
-        public static final int tickets_5_t_40=0x7f04047d;
-        public static final int tickets_5_t_41=0x7f04047e;
-        public static final int tickets_5_t_42=0x7f04047f;
-        public static final int tickets_5_t_43=0x7f040480;
-        public static final int tickets_5_t_44=0x7f040481;
-        public static final int tickets_5_t_45=0x7f040482;
-        public static final int tickets_5_t_46=0x7f040483;
-        public static final int tickets_5_t_47=0x7f040484;
-        public static final int tickets_5_t_48=0x7f040485;
-        public static final int tickets_5_t_49=0x7f040486;
-        public static final int tickets_5_t_5=0x7f040487;
-        public static final int tickets_5_t_50=0x7f040488;
-        public static final int tickets_5_t_51=0x7f040489;
-        public static final int tickets_5_t_52=0x7f04048a;
-        public static final int tickets_5_t_53=0x7f04048b;
-        public static final int tickets_5_t_54=0x7f04048c;
-        public static final int tickets_5_t_55=0x7f04048d;
-        public static final int tickets_5_t_56=0x7f04048e;
-        public static final int tickets_5_t_57=0x7f04048f;
-        public static final int tickets_5_t_58=0x7f040490;
-        public static final int tickets_5_t_59=0x7f040491;
-        public static final int tickets_5_t_6=0x7f040492;
-        public static final int tickets_5_t_60=0x7f040493;
-        public static final int tickets_5_t_61=0x7f040494;
-        public static final int tickets_5_t_62=0x7f040495;
-        public static final int tickets_5_t_63=0x7f040496;
-        public static final int tickets_5_t_64=0x7f040497;
-        public static final int tickets_5_t_65=0x7f040498;
-        public static final int tickets_5_t_66=0x7f040499;
-        public static final int tickets_5_t_67=0x7f04049a;
-        public static final int tickets_5_t_68=0x7f04049b;
-        public static final int tickets_5_t_69=0x7f04049c;
-        public static final int tickets_5_t_7=0x7f04049d;
-        public static final int tickets_5_t_70=0x7f04049e;
-        public static final int tickets_5_t_71=0x7f04049f;
-        public static final int tickets_5_t_72=0x7f0404a0;
-        public static final int tickets_5_t_73=0x7f0404a1;
-        public static final int tickets_5_t_8=0x7f0404a2;
-        public static final int tickets_5_t_9=0x7f0404a3;
-        public static final int tickets_6_t_1=0x7f0404a4;
-        public static final int tickets_6_t_10=0x7f0404a5;
-        public static final int tickets_6_t_11=0x7f0404a6;
-        public static final int tickets_6_t_12=0x7f0404a7;
-        public static final int tickets_6_t_13=0x7f0404a8;
-        public static final int tickets_6_t_14=0x7f0404a9;
-        public static final int tickets_6_t_15=0x7f0404aa;
-        public static final int tickets_6_t_16=0x7f0404ab;
-        public static final int tickets_6_t_17=0x7f0404ac;
-        public static final int tickets_6_t_18=0x7f0404ad;
-        public static final int tickets_6_t_19=0x7f0404ae;
-        public static final int tickets_6_t_2=0x7f0404af;
-        public static final int tickets_6_t_20=0x7f0404b0;
-        public static final int tickets_6_t_21=0x7f0404b1;
-        public static final int tickets_6_t_22=0x7f0404b2;
-        public static final int tickets_6_t_23=0x7f0404b3;
-        public static final int tickets_6_t_24=0x7f0404b4;
-        public static final int tickets_6_t_25=0x7f0404b5;
-        public static final int tickets_6_t_26=0x7f0404b6;
-        public static final int tickets_6_t_27=0x7f0404b7;
-        public static final int tickets_6_t_28=0x7f0404b8;
-        public static final int tickets_6_t_29=0x7f0404b9;
-        public static final int tickets_6_t_3=0x7f0404ba;
-        public static final int tickets_6_t_30=0x7f0404bb;
-        public static final int tickets_6_t_4=0x7f0404bc;
-        public static final int tickets_6_t_5=0x7f0404bd;
-        public static final int tickets_6_t_6=0x7f0404be;
-        public static final int tickets_6_t_7=0x7f0404bf;
-        public static final int tickets_6_t_8=0x7f0404c0;
-        public static final int tickets_6_t_9=0x7f0404c1;
-        public static final int tickets_7_t_1=0x7f0404c2;
-        public static final int tickets_7_t_10=0x7f0404c3;
-        public static final int tickets_7_t_11=0x7f0404c4;
-        public static final int tickets_7_t_12=0x7f0404c5;
-        public static final int tickets_7_t_13=0x7f0404c6;
-        public static final int tickets_7_t_14=0x7f0404c7;
-        public static final int tickets_7_t_15=0x7f0404c8;
-        public static final int tickets_7_t_16=0x7f0404c9;
-        public static final int tickets_7_t_17=0x7f0404ca;
-        public static final int tickets_7_t_18=0x7f0404cb;
-        public static final int tickets_7_t_19=0x7f0404cc;
-        public static final int tickets_7_t_2=0x7f0404cd;
-        public static final int tickets_7_t_20=0x7f0404ce;
-        public static final int tickets_7_t_21=0x7f0404cf;
-        public static final int tickets_7_t_22=0x7f0404d0;
-        public static final int tickets_7_t_23=0x7f0404d1;
-        public static final int tickets_7_t_24=0x7f0404d2;
-        public static final int tickets_7_t_25=0x7f0404d3;
-        public static final int tickets_7_t_26=0x7f0404d4;
-        public static final int tickets_7_t_27=0x7f0404d5;
-        public static final int tickets_7_t_28=0x7f0404d6;
-        public static final int tickets_7_t_29=0x7f0404d7;
-        public static final int tickets_7_t_3=0x7f0404d8;
-        public static final int tickets_7_t_30=0x7f0404d9;
-        public static final int tickets_7_t_31=0x7f0404da;
-        public static final int tickets_7_t_32=0x7f0404db;
-        public static final int tickets_7_t_33=0x7f0404dc;
-        public static final int tickets_7_t_34=0x7f0404dd;
-        public static final int tickets_7_t_35=0x7f0404de;
-        public static final int tickets_7_t_36=0x7f0404df;
-        public static final int tickets_7_t_37=0x7f0404e0;
-        public static final int tickets_7_t_4=0x7f0404e1;
-        public static final int tickets_7_t_5=0x7f0404e2;
-        public static final int tickets_7_t_6=0x7f0404e3;
-        public static final int tickets_7_t_7=0x7f0404e4;
-        public static final int tickets_7_t_8=0x7f0404e5;
-        public static final int tickets_7_t_9=0x7f0404e6;
-        public static final int tickets_8_t_1=0x7f0404e7;
-        public static final int tickets_8_t_10=0x7f0404e8;
-        public static final int tickets_8_t_2=0x7f0404e9;
-        public static final int tickets_8_t_3=0x7f0404ea;
-        public static final int tickets_8_t_4=0x7f0404eb;
-        public static final int tickets_8_t_5=0x7f0404ec;
-        public static final int tickets_8_t_6=0x7f0404ed;
-        public static final int tickets_8_t_7=0x7f0404ee;
-        public static final int tickets_8_t_8=0x7f0404ef;
-        public static final int tickets_8_t_9=0x7f0404f0;
-        public static final int tickets_9_t_1=0x7f0404f1;
-        public static final int tickets_9_t_10=0x7f0404f2;
-        public static final int tickets_9_t_11=0x7f0404f3;
-        public static final int tickets_9_t_12=0x7f0404f4;
-        public static final int tickets_9_t_13=0x7f0404f5;
-        public static final int tickets_9_t_14=0x7f0404f6;
-        public static final int tickets_9_t_15=0x7f0404f7;
-        public static final int tickets_9_t_16=0x7f0404f8;
-        public static final int tickets_9_t_17=0x7f0404f9;
-        public static final int tickets_9_t_18=0x7f0404fa;
-        public static final int tickets_9_t_19=0x7f0404fb;
-        public static final int tickets_9_t_2=0x7f0404fc;
-        public static final int tickets_9_t_20=0x7f0404fd;
-        public static final int tickets_9_t_21=0x7f0404fe;
-        public static final int tickets_9_t_22=0x7f0404ff;
-        public static final int tickets_9_t_23=0x7f040500;
-        public static final int tickets_9_t_24=0x7f040501;
-        public static final int tickets_9_t_25=0x7f040502;
-        public static final int tickets_9_t_26=0x7f040503;
-        public static final int tickets_9_t_27=0x7f040504;
-        public static final int tickets_9_t_28=0x7f040505;
-        public static final int tickets_9_t_29=0x7f040506;
-        public static final int tickets_9_t_3=0x7f040507;
-        public static final int tickets_9_t_30=0x7f040508;
-        public static final int tickets_9_t_31=0x7f040509;
-        public static final int tickets_9_t_32=0x7f04050a;
-        public static final int tickets_9_t_33=0x7f04050b;
-        public static final int tickets_9_t_34=0x7f04050c;
-        public static final int tickets_9_t_35=0x7f04050d;
-        public static final int tickets_9_t_36=0x7f04050e;
-        public static final int tickets_9_t_37=0x7f04050f;
-        public static final int tickets_9_t_38=0x7f040510;
-        public static final int tickets_9_t_4=0x7f040511;
-        public static final int tickets_9_t_5=0x7f040512;
-        public static final int tickets_9_t_6=0x7f040513;
-        public static final int tickets_9_t_7=0x7f040514;
-        public static final int tickets_9_t_8=0x7f040515;
-        public static final int tickets_9_t_9=0x7f040516;
-        public static final int wheel=0x7f040517;
+        public static final int tickets_10_t_4=0x7f040135;
+        public static final int tickets_10_t_47=0x7f040136;
+        public static final int tickets_10_t_48=0x7f040137;
+        public static final int tickets_10_t_49=0x7f040138;
+        public static final int tickets_10_t_5=0x7f040139;
+        public static final int tickets_10_t_50=0x7f04013a;
+        public static final int tickets_10_t_51=0x7f04013b;
+        public static final int tickets_10_t_52=0x7f04013c;
+        public static final int tickets_10_t_53=0x7f04013d;
+        public static final int tickets_10_t_6=0x7f04013e;
+        public static final int tickets_10_t_7=0x7f04013f;
+        public static final int tickets_10_t_8=0x7f040140;
+        public static final int tickets_10_t_9=0x7f040141;
+        public static final int tickets_11_t_1=0x7f040142;
+        public static final int tickets_11_t_10=0x7f040143;
+        public static final int tickets_11_t_11=0x7f040144;
+        public static final int tickets_11_t_12=0x7f040145;
+        public static final int tickets_11_t_13=0x7f040146;
+        public static final int tickets_11_t_14=0x7f040147;
+        public static final int tickets_11_t_15=0x7f040148;
+        public static final int tickets_11_t_16=0x7f040149;
+        public static final int tickets_11_t_17=0x7f04014a;
+        public static final int tickets_11_t_18=0x7f04014b;
+        public static final int tickets_11_t_19=0x7f04014c;
+        public static final int tickets_11_t_2=0x7f04014d;
+        public static final int tickets_11_t_20=0x7f04014e;
+        public static final int tickets_11_t_21=0x7f04014f;
+        public static final int tickets_11_t_22=0x7f040150;
+        public static final int tickets_11_t_23=0x7f040151;
+        public static final int tickets_11_t_24=0x7f040152;
+        public static final int tickets_11_t_3=0x7f040153;
+        public static final int tickets_11_t_30=0x7f040154;
+        public static final int tickets_11_t_31=0x7f040155;
+        public static final int tickets_11_t_32=0x7f040156;
+        public static final int tickets_11_t_36=0x7f040157;
+        public static final int tickets_11_t_37=0x7f040158;
+        public static final int tickets_11_t_38=0x7f040159;
+        public static final int tickets_11_t_4=0x7f04015a;
+        public static final int tickets_11_t_5=0x7f04015b;
+        public static final int tickets_11_t_6=0x7f04015c;
+        public static final int tickets_11_t_7=0x7f04015d;
+        public static final int tickets_11_t_8=0x7f04015e;
+        public static final int tickets_11_t_9=0x7f04015f;
+        public static final int tickets_12_t_1=0x7f040160;
+        public static final int tickets_12_t_13=0x7f040161;
+        public static final int tickets_12_t_14=0x7f040162;
+        public static final int tickets_12_t_15=0x7f040163;
+        public static final int tickets_12_t_16=0x7f040164;
+        public static final int tickets_12_t_17=0x7f040165;
+        public static final int tickets_12_t_18=0x7f040166;
+        public static final int tickets_12_t_3=0x7f040167;
+        public static final int tickets_13_t_1=0x7f040168;
+        public static final int tickets_14_t_4=0x7f040169;
+        public static final int tickets_15_t_1=0x7f04016a;
+        public static final int tickets_15_t_10=0x7f04016b;
+        public static final int tickets_15_t_11=0x7f04016c;
+        public static final int tickets_15_t_12=0x7f04016d;
+        public static final int tickets_15_t_15=0x7f04016e;
+        public static final int tickets_15_t_16=0x7f04016f;
+        public static final int tickets_15_t_17=0x7f040170;
+        public static final int tickets_15_t_18=0x7f040171;
+        public static final int tickets_15_t_19=0x7f040172;
+        public static final int tickets_15_t_2=0x7f040173;
+        public static final int tickets_15_t_20=0x7f040174;
+        public static final int tickets_15_t_21=0x7f040175;
+        public static final int tickets_15_t_22=0x7f040176;
+        public static final int tickets_15_t_23=0x7f040177;
+        public static final int tickets_15_t_24=0x7f040178;
+        public static final int tickets_15_t_25=0x7f040179;
+        public static final int tickets_15_t_27=0x7f04017a;
+        public static final int tickets_15_t_3=0x7f04017b;
+        public static final int tickets_15_t_33=0x7f04017c;
+        public static final int tickets_15_t_34=0x7f04017d;
+        public static final int tickets_15_t_35=0x7f04017e;
+        public static final int tickets_15_t_36=0x7f04017f;
+        public static final int tickets_15_t_37=0x7f040180;
+        public static final int tickets_15_t_38=0x7f040181;
+        public static final int tickets_15_t_39=0x7f040182;
+        public static final int tickets_15_t_4=0x7f040183;
+        public static final int tickets_15_t_41=0x7f040184;
+        public static final int tickets_15_t_45=0x7f040185;
+        public static final int tickets_15_t_46=0x7f040186;
+        public static final int tickets_15_t_47=0x7f040187;
+        public static final int tickets_15_t_48=0x7f040188;
+        public static final int tickets_15_t_49=0x7f040189;
+        public static final int tickets_15_t_5=0x7f04018a;
+        public static final int tickets_15_t_50=0x7f04018b;
+        public static final int tickets_15_t_51=0x7f04018c;
+        public static final int tickets_15_t_52=0x7f04018d;
+        public static final int tickets_15_t_6=0x7f04018e;
+        public static final int tickets_15_t_7=0x7f04018f;
+        public static final int tickets_15_t_8=0x7f040190;
+        public static final int tickets_15_t_9=0x7f040191;
+        public static final int tickets_16_t_1=0x7f040192;
+        public static final int tickets_16_t_10=0x7f040193;
+        public static final int tickets_16_t_11=0x7f040194;
+        public static final int tickets_16_t_12=0x7f040195;
+        public static final int tickets_16_t_13=0x7f040196;
+        public static final int tickets_16_t_14=0x7f040197;
+        public static final int tickets_16_t_15=0x7f040198;
+        public static final int tickets_16_t_17=0x7f040199;
+        public static final int tickets_16_t_18=0x7f04019a;
+        public static final int tickets_16_t_19=0x7f04019b;
+        public static final int tickets_16_t_2=0x7f04019c;
+        public static final int tickets_16_t_20=0x7f04019d;
+        public static final int tickets_16_t_21=0x7f04019e;
+        public static final int tickets_16_t_22=0x7f04019f;
+        public static final int tickets_16_t_23=0x7f0401a0;
+        public static final int tickets_16_t_24=0x7f0401a1;
+        public static final int tickets_16_t_25=0x7f0401a2;
+        public static final int tickets_16_t_29=0x7f0401a3;
+        public static final int tickets_16_t_3=0x7f0401a4;
+        public static final int tickets_16_t_30=0x7f0401a5;
+        public static final int tickets_16_t_31=0x7f0401a6;
+        public static final int tickets_16_t_32=0x7f0401a7;
+        public static final int tickets_16_t_33=0x7f0401a8;
+        public static final int tickets_16_t_34=0x7f0401a9;
+        public static final int tickets_16_t_35=0x7f0401aa;
+        public static final int tickets_16_t_36=0x7f0401ab;
+        public static final int tickets_16_t_37=0x7f0401ac;
+        public static final int tickets_16_t_38=0x7f0401ad;
+        public static final int tickets_16_t_39=0x7f0401ae;
+        public static final int tickets_16_t_4=0x7f0401af;
+        public static final int tickets_16_t_43=0x7f0401b0;
+        public static final int tickets_16_t_5=0x7f0401b1;
+        public static final int tickets_16_t_6=0x7f0401b2;
+        public static final int tickets_16_t_7=0x7f0401b3;
+        public static final int tickets_16_t_8=0x7f0401b4;
+        public static final int tickets_16_t_9=0x7f0401b5;
+        public static final int tickets_17_t_1=0x7f0401b6;
+        public static final int tickets_17_t_10=0x7f0401b7;
+        public static final int tickets_17_t_11=0x7f0401b8;
+        public static final int tickets_17_t_13=0x7f0401b9;
+        public static final int tickets_17_t_14=0x7f0401ba;
+        public static final int tickets_17_t_16=0x7f0401bb;
+        public static final int tickets_17_t_18=0x7f0401bc;
+        public static final int tickets_17_t_19=0x7f0401bd;
+        public static final int tickets_17_t_2=0x7f0401be;
+        public static final int tickets_17_t_20=0x7f0401bf;
+        public static final int tickets_17_t_3=0x7f0401c0;
+        public static final int tickets_17_t_4=0x7f0401c1;
+        public static final int tickets_17_t_5=0x7f0401c2;
+        public static final int tickets_17_t_6=0x7f0401c3;
+        public static final int tickets_17_t_7=0x7f0401c4;
+        public static final int tickets_17_t_8=0x7f0401c5;
+        public static final int tickets_17_t_9=0x7f0401c6;
+        public static final int tickets_19_t_1=0x7f0401c7;
+        public static final int tickets_19_t_10=0x7f0401c8;
+        public static final int tickets_19_t_11=0x7f0401c9;
+        public static final int tickets_19_t_12=0x7f0401ca;
+        public static final int tickets_19_t_13=0x7f0401cb;
+        public static final int tickets_19_t_14=0x7f0401cc;
+        public static final int tickets_19_t_15=0x7f0401cd;
+        public static final int tickets_19_t_16=0x7f0401ce;
+        public static final int tickets_19_t_17=0x7f0401cf;
+        public static final int tickets_19_t_18=0x7f0401d0;
+        public static final int tickets_19_t_19=0x7f0401d1;
+        public static final int tickets_19_t_2=0x7f0401d2;
+        public static final int tickets_19_t_22=0x7f0401d3;
+        public static final int tickets_19_t_23=0x7f0401d4;
+        public static final int tickets_19_t_26=0x7f0401d5;
+        public static final int tickets_19_t_27=0x7f0401d6;
+        public static final int tickets_19_t_28=0x7f0401d7;
+        public static final int tickets_19_t_29=0x7f0401d8;
+        public static final int tickets_19_t_30=0x7f0401d9;
+        public static final int tickets_19_t_4=0x7f0401da;
+        public static final int tickets_19_t_5=0x7f0401db;
+        public static final int tickets_19_t_6=0x7f0401dc;
+        public static final int tickets_19_t_7=0x7f0401dd;
+        public static final int tickets_19_t_8=0x7f0401de;
+        public static final int tickets_19_t_9=0x7f0401df;
+        public static final int tickets_1_t_1=0x7f0401e0;
+        public static final int tickets_1_t_12=0x7f0401e1;
+        public static final int tickets_1_t_13=0x7f0401e2;
+        public static final int tickets_20_t_1=0x7f0401e3;
+        public static final int tickets_20_t_10=0x7f0401e4;
+        public static final int tickets_20_t_11=0x7f0401e5;
+        public static final int tickets_20_t_12=0x7f0401e6;
+        public static final int tickets_20_t_13=0x7f0401e7;
+        public static final int tickets_20_t_14=0x7f0401e8;
+        public static final int tickets_20_t_15=0x7f0401e9;
+        public static final int tickets_20_t_16=0x7f0401ea;
+        public static final int tickets_20_t_17=0x7f0401eb;
+        public static final int tickets_20_t_18=0x7f0401ec;
+        public static final int tickets_20_t_19=0x7f0401ed;
+        public static final int tickets_20_t_2=0x7f0401ee;
+        public static final int tickets_20_t_20=0x7f0401ef;
+        public static final int tickets_20_t_21=0x7f0401f0;
+        public static final int tickets_20_t_22=0x7f0401f1;
+        public static final int tickets_20_t_23=0x7f0401f2;
+        public static final int tickets_20_t_24=0x7f0401f3;
+        public static final int tickets_20_t_25=0x7f0401f4;
+        public static final int tickets_20_t_26=0x7f0401f5;
+        public static final int tickets_20_t_27=0x7f0401f6;
+        public static final int tickets_20_t_28=0x7f0401f7;
+        public static final int tickets_20_t_29=0x7f0401f8;
+        public static final int tickets_20_t_3=0x7f0401f9;
+        public static final int tickets_20_t_30=0x7f0401fa;
+        public static final int tickets_20_t_31=0x7f0401fb;
+        public static final int tickets_20_t_32=0x7f0401fc;
+        public static final int tickets_20_t_33=0x7f0401fd;
+        public static final int tickets_20_t_34=0x7f0401fe;
+        public static final int tickets_20_t_35=0x7f0401ff;
+        public static final int tickets_20_t_36=0x7f040200;
+        public static final int tickets_20_t_37=0x7f040201;
+        public static final int tickets_20_t_38=0x7f040202;
+        public static final int tickets_20_t_39=0x7f040203;
+        public static final int tickets_20_t_4=0x7f040204;
+        public static final int tickets_20_t_40=0x7f040205;
+        public static final int tickets_20_t_41=0x7f040206;
+        public static final int tickets_20_t_43=0x7f040207;
+        public static final int tickets_20_t_44=0x7f040208;
+        public static final int tickets_20_t_45=0x7f040209;
+        public static final int tickets_20_t_5=0x7f04020a;
+        public static final int tickets_20_t_6=0x7f04020b;
+        public static final int tickets_20_t_7=0x7f04020c;
+        public static final int tickets_20_t_8=0x7f04020d;
+        public static final int tickets_20_t_9=0x7f04020e;
+        public static final int tickets_21_t_1=0x7f04020f;
+        public static final int tickets_21_t_10=0x7f040210;
+        public static final int tickets_21_t_11=0x7f040211;
+        public static final int tickets_21_t_12=0x7f040212;
+        public static final int tickets_21_t_13=0x7f040213;
+        public static final int tickets_21_t_14=0x7f040214;
+        public static final int tickets_21_t_15=0x7f040215;
+        public static final int tickets_21_t_16=0x7f040216;
+        public static final int tickets_21_t_17=0x7f040217;
+        public static final int tickets_21_t_18=0x7f040218;
+        public static final int tickets_21_t_19=0x7f040219;
+        public static final int tickets_21_t_5=0x7f04021a;
+        public static final int tickets_21_t_6=0x7f04021b;
+        public static final int tickets_21_t_7=0x7f04021c;
+        public static final int tickets_21_t_8=0x7f04021d;
+        public static final int tickets_21_t_9=0x7f04021e;
+        public static final int tickets_22_t_1=0x7f04021f;
+        public static final int tickets_22_t_10=0x7f040220;
+        public static final int tickets_22_t_11=0x7f040221;
+        public static final int tickets_22_t_12=0x7f040222;
+        public static final int tickets_22_t_13=0x7f040223;
+        public static final int tickets_22_t_14=0x7f040224;
+        public static final int tickets_22_t_15=0x7f040225;
+        public static final int tickets_22_t_2=0x7f040226;
+        public static final int tickets_22_t_3=0x7f040227;
+        public static final int tickets_22_t_4=0x7f040228;
+        public static final int tickets_22_t_9=0x7f040229;
+        public static final int tickets_23_t_1=0x7f04022a;
+        public static final int tickets_23_t_4=0x7f04022b;
+        public static final int tickets_23_t_5=0x7f04022c;
+        public static final int tickets_23_t_6=0x7f04022d;
+        public static final int tickets_23_t_7=0x7f04022e;
+        public static final int tickets_23_t_8=0x7f04022f;
+        public static final int tickets_24_t_1=0x7f040230;
+        public static final int tickets_24_t_10=0x7f040231;
+        public static final int tickets_24_t_2=0x7f040232;
+        public static final int tickets_24_t_3=0x7f040233;
+        public static final int tickets_24_t_4=0x7f040234;
+        public static final int tickets_24_t_5=0x7f040235;
+        public static final int tickets_24_t_6=0x7f040236;
+        public static final int tickets_24_t_7=0x7f040237;
+        public static final int tickets_24_t_8=0x7f040238;
+        public static final int tickets_24_t_9=0x7f040239;
+        public static final int tickets_25_t_6=0x7f04023a;
+        public static final int tickets_25_t_7=0x7f04023b;
+        public static final int tickets_25_t_8=0x7f04023c;
+        public static final int tickets_27_t_1=0x7f04023d;
+        public static final int tickets_28_t_10=0x7f04023e;
+        public static final int tickets_28_t_11=0x7f04023f;
+        public static final int tickets_28_t_12=0x7f040240;
+        public static final int tickets_28_t_13=0x7f040241;
+        public static final int tickets_28_t_14=0x7f040242;
+        public static final int tickets_28_t_15=0x7f040243;
+        public static final int tickets_28_t_16=0x7f040244;
+        public static final int tickets_28_t_7=0x7f040245;
+        public static final int tickets_28_t_8=0x7f040246;
+        public static final int tickets_28_t_9=0x7f040247;
+        public static final int tickets_2_t_10=0x7f040248;
+        public static final int tickets_2_t_3=0x7f040249;
+        public static final int tickets_2_t_4=0x7f04024a;
+        public static final int tickets_2_t_5=0x7f04024b;
+        public static final int tickets_3_t_1=0x7f04024c;
+        public static final int tickets_3_t_10=0x7f04024d;
+        public static final int tickets_3_t_11=0x7f04024e;
+        public static final int tickets_3_t_12=0x7f04024f;
+        public static final int tickets_3_t_13=0x7f040250;
+        public static final int tickets_3_t_14=0x7f040251;
+        public static final int tickets_3_t_15=0x7f040252;
+        public static final int tickets_3_t_16=0x7f040253;
+        public static final int tickets_3_t_17=0x7f040254;
+        public static final int tickets_3_t_18=0x7f040255;
+        public static final int tickets_3_t_19=0x7f040256;
+        public static final int tickets_3_t_2=0x7f040257;
+        public static final int tickets_3_t_20=0x7f040258;
+        public static final int tickets_3_t_21=0x7f040259;
+        public static final int tickets_3_t_22=0x7f04025a;
+        public static final int tickets_3_t_23=0x7f04025b;
+        public static final int tickets_3_t_24=0x7f04025c;
+        public static final int tickets_3_t_25=0x7f04025d;
+        public static final int tickets_3_t_26=0x7f04025e;
+        public static final int tickets_3_t_27=0x7f04025f;
+        public static final int tickets_3_t_3=0x7f040260;
+        public static final int tickets_3_t_4=0x7f040261;
+        public static final int tickets_3_t_5=0x7f040262;
+        public static final int tickets_3_t_6=0x7f040263;
+        public static final int tickets_3_t_7=0x7f040264;
+        public static final int tickets_3_t_8=0x7f040265;
+        public static final int tickets_3_t_9=0x7f040266;
+        public static final int tickets_4_t_1=0x7f040267;
+        public static final int tickets_4_t_10=0x7f040268;
+        public static final int tickets_4_t_11=0x7f040269;
+        public static final int tickets_4_t_12=0x7f04026a;
+        public static final int tickets_4_t_13=0x7f04026b;
+        public static final int tickets_4_t_14=0x7f04026c;
+        public static final int tickets_4_t_15=0x7f04026d;
+        public static final int tickets_4_t_16=0x7f04026e;
+        public static final int tickets_4_t_17=0x7f04026f;
+        public static final int tickets_4_t_18=0x7f040270;
+        public static final int tickets_4_t_2=0x7f040271;
+        public static final int tickets_4_t_3=0x7f040272;
+        public static final int tickets_4_t_4=0x7f040273;
+        public static final int tickets_4_t_5=0x7f040274;
+        public static final int tickets_4_t_6=0x7f040275;
+        public static final int tickets_4_t_7=0x7f040276;
+        public static final int tickets_4_t_8=0x7f040277;
+        public static final int tickets_4_t_9=0x7f040278;
+        public static final int tickets_5_t_1=0x7f040279;
+        public static final int tickets_5_t_10=0x7f04027a;
+        public static final int tickets_5_t_11=0x7f04027b;
+        public static final int tickets_5_t_12=0x7f04027c;
+        public static final int tickets_5_t_13=0x7f04027d;
+        public static final int tickets_5_t_14=0x7f04027e;
+        public static final int tickets_5_t_15=0x7f04027f;
+        public static final int tickets_5_t_16=0x7f040280;
+        public static final int tickets_5_t_17=0x7f040281;
+        public static final int tickets_5_t_18=0x7f040282;
+        public static final int tickets_5_t_19=0x7f040283;
+        public static final int tickets_5_t_2=0x7f040284;
+        public static final int tickets_5_t_20=0x7f040285;
+        public static final int tickets_5_t_21=0x7f040286;
+        public static final int tickets_5_t_22=0x7f040287;
+        public static final int tickets_5_t_23=0x7f040288;
+        public static final int tickets_5_t_24=0x7f040289;
+        public static final int tickets_5_t_25=0x7f04028a;
+        public static final int tickets_5_t_26=0x7f04028b;
+        public static final int tickets_5_t_27=0x7f04028c;
+        public static final int tickets_5_t_28=0x7f04028d;
+        public static final int tickets_5_t_29=0x7f04028e;
+        public static final int tickets_5_t_3=0x7f04028f;
+        public static final int tickets_5_t_30=0x7f040290;
+        public static final int tickets_5_t_31=0x7f040291;
+        public static final int tickets_5_t_32=0x7f040292;
+        public static final int tickets_5_t_33=0x7f040293;
+        public static final int tickets_5_t_34=0x7f040294;
+        public static final int tickets_5_t_35=0x7f040295;
+        public static final int tickets_5_t_36=0x7f040296;
+        public static final int tickets_5_t_37=0x7f040297;
+        public static final int tickets_5_t_38=0x7f040298;
+        public static final int tickets_5_t_39=0x7f040299;
+        public static final int tickets_5_t_4=0x7f04029a;
+        public static final int tickets_5_t_40=0x7f04029b;
+        public static final int tickets_5_t_41=0x7f04029c;
+        public static final int tickets_5_t_42=0x7f04029d;
+        public static final int tickets_5_t_43=0x7f04029e;
+        public static final int tickets_5_t_44=0x7f04029f;
+        public static final int tickets_5_t_45=0x7f0402a0;
+        public static final int tickets_5_t_46=0x7f0402a1;
+        public static final int tickets_5_t_47=0x7f0402a2;
+        public static final int tickets_5_t_48=0x7f0402a3;
+        public static final int tickets_5_t_49=0x7f0402a4;
+        public static final int tickets_5_t_5=0x7f0402a5;
+        public static final int tickets_5_t_50=0x7f0402a6;
+        public static final int tickets_5_t_6=0x7f0402a7;
+        public static final int tickets_5_t_7=0x7f0402a8;
+        public static final int tickets_5_t_8=0x7f0402a9;
+        public static final int tickets_5_t_9=0x7f0402aa;
+        public static final int tickets_6_t_1=0x7f0402ab;
+        public static final int tickets_6_t_10=0x7f0402ac;
+        public static final int tickets_6_t_11=0x7f0402ad;
+        public static final int tickets_6_t_12=0x7f0402ae;
+        public static final int tickets_6_t_13=0x7f0402af;
+        public static final int tickets_6_t_14=0x7f0402b0;
+        public static final int tickets_6_t_15=0x7f0402b1;
+        public static final int tickets_6_t_16=0x7f0402b2;
+        public static final int tickets_6_t_17=0x7f0402b3;
+        public static final int tickets_6_t_18=0x7f0402b4;
+        public static final int tickets_6_t_19=0x7f0402b5;
+        public static final int tickets_6_t_2=0x7f0402b6;
+        public static final int tickets_6_t_20=0x7f0402b7;
+        public static final int tickets_6_t_21=0x7f0402b8;
+        public static final int tickets_6_t_22=0x7f0402b9;
+        public static final int tickets_6_t_3=0x7f0402ba;
+        public static final int tickets_6_t_4=0x7f0402bb;
+        public static final int tickets_6_t_5=0x7f0402bc;
+        public static final int tickets_6_t_6=0x7f0402bd;
+        public static final int tickets_6_t_7=0x7f0402be;
+        public static final int tickets_6_t_8=0x7f0402bf;
+        public static final int tickets_6_t_9=0x7f0402c0;
+        public static final int tickets_7_t_1=0x7f0402c1;
+        public static final int tickets_7_t_10=0x7f0402c2;
+        public static final int tickets_7_t_11=0x7f0402c3;
+        public static final int tickets_7_t_12=0x7f0402c4;
+        public static final int tickets_7_t_13=0x7f0402c5;
+        public static final int tickets_7_t_14=0x7f0402c6;
+        public static final int tickets_7_t_15=0x7f0402c7;
+        public static final int tickets_7_t_16=0x7f0402c8;
+        public static final int tickets_7_t_17=0x7f0402c9;
+        public static final int tickets_7_t_18=0x7f0402ca;
+        public static final int tickets_7_t_19=0x7f0402cb;
+        public static final int tickets_7_t_2=0x7f0402cc;
+        public static final int tickets_7_t_20=0x7f0402cd;
+        public static final int tickets_7_t_21=0x7f0402ce;
+        public static final int tickets_7_t_22=0x7f0402cf;
+        public static final int tickets_7_t_23=0x7f0402d0;
+        public static final int tickets_7_t_24=0x7f0402d1;
+        public static final int tickets_7_t_25=0x7f0402d2;
+        public static final int tickets_7_t_26=0x7f0402d3;
+        public static final int tickets_7_t_27=0x7f0402d4;
+        public static final int tickets_7_t_28=0x7f0402d5;
+        public static final int tickets_7_t_3=0x7f0402d6;
+        public static final int tickets_7_t_30=0x7f0402d7;
+        public static final int tickets_7_t_31=0x7f0402d8;
+        public static final int tickets_7_t_32=0x7f0402d9;
+        public static final int tickets_7_t_4=0x7f0402da;
+        public static final int tickets_7_t_5=0x7f0402db;
+        public static final int tickets_7_t_6=0x7f0402dc;
+        public static final int tickets_7_t_7=0x7f0402dd;
+        public static final int tickets_7_t_8=0x7f0402de;
+        public static final int tickets_7_t_9=0x7f0402df;
+        public static final int tickets_8_t_1=0x7f0402e0;
+        public static final int tickets_8_t_10=0x7f0402e1;
+        public static final int tickets_8_t_2=0x7f0402e2;
+        public static final int tickets_8_t_3=0x7f0402e3;
+        public static final int tickets_8_t_4=0x7f0402e4;
+        public static final int tickets_8_t_5=0x7f0402e5;
+        public static final int tickets_8_t_6=0x7f0402e6;
+        public static final int tickets_8_t_7=0x7f0402e7;
+        public static final int tickets_8_t_8=0x7f0402e8;
+        public static final int tickets_8_t_9=0x7f0402e9;
+        public static final int tickets_9_t_1=0x7f0402ea;
+        public static final int tickets_9_t_10=0x7f0402eb;
+        public static final int tickets_9_t_11=0x7f0402ec;
+        public static final int tickets_9_t_12=0x7f0402ed;
+        public static final int tickets_9_t_13=0x7f0402ee;
+        public static final int tickets_9_t_14=0x7f0402ef;
+        public static final int tickets_9_t_15=0x7f0402f0;
+        public static final int tickets_9_t_16=0x7f0402f1;
+        public static final int tickets_9_t_17=0x7f0402f2;
+        public static final int tickets_9_t_18=0x7f0402f3;
+        public static final int tickets_9_t_19=0x7f0402f4;
+        public static final int tickets_9_t_2=0x7f0402f5;
+        public static final int tickets_9_t_3=0x7f0402f6;
+        public static final int tickets_9_t_4=0x7f0402f7;
+        public static final int tickets_9_t_5=0x7f0402f8;
+        public static final int tickets_9_t_6=0x7f0402f9;
+        public static final int tickets_9_t_7=0x7f0402fa;
+        public static final int tickets_9_t_8=0x7f0402fb;
+        public static final int tickets_9_t_9=0x7f0402fc;
+        public static final int wheel=0x7f0402fd;
     }
     public static final class string {
         public static final int about_author=0x7f070037;
@@ -1778,6 +1041,29 @@ containing a value of this type.
         public static final int about_title=0x7f070035;
         public static final int answer_is=0x7f070025;
         public static final int app_name=0x7f07001a;
+        /**   Title for notification shown when GooglePlayServices needs to be
+        enabled for a application to work. [CHAR LIMIT=70] 
+         */
+        public static final int auth_client_needs_enabling_title=0x7f070015;
+        /**   Title for notification shown when GooglePlayServices needs to be
+        installed for a application to work. [CHAR LIMIT=70] 
+         */
+        public static final int auth_client_needs_installation_title=0x7f070016;
+        /**   Title for notification shown when GooglePlayServices needs to be
+        udpated for a application to work. [CHAR LIMIT=70] 
+         */
+        public static final int auth_client_needs_update_title=0x7f070017;
+        /**   Title for notification shown when GooglePlayServices is unavailable [CHAR LIMIT=42] 
+         */
+        public static final int auth_client_play_services_err_notification_msg=0x7f070018;
+        /**   Requested by string saying which app requested the notification. [CHAR LIMIT=42] 
+         */
+        public static final int auth_client_requested_by_msg=0x7f070019;
+        /**   Title for notification shown when a bad version of GooglePlayServices
+        has been installed and needs correction for an application to work.
+        [CHAR LIMIT=70] 
+         */
+        public static final int auth_client_using_bad_version_title=0x7f070014;
         public static final int but_close_alert_dia=0x7f070028;
         public static final int but_forward=0x7f070029;
         public static final int but_next_cat=0x7f070034;
@@ -1790,91 +1076,73 @@ containing a value of this type.
         will direct user to application settings of Google Play services where they
         can enable it [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_enable_button=0x7f07000b;
+        public static final int common_google_play_services_enable_button=0x7f070006;
         /**  Message in confirmation dialog informing user they need to enable
         Google Play services in application settings [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_enable_text=0x7f07000a;
+        public static final int common_google_play_services_enable_text=0x7f070005;
         /**  Title of confirmation dialog informing user they need to enable
         Google Play services in application settings [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_enable_title=0x7f070009;
-        /**   Requested by string saying which app requested the notification. [CHAR LIMIT=42] 
-         */
-        public static final int common_google_play_services_error_notification_requested_by_msg=0x7f070004;
+        public static final int common_google_play_services_enable_title=0x7f070004;
         /**  Button in confirmation dialog for installing Google Play services [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_install_button=0x7f070008;
+        public static final int common_google_play_services_install_button=0x7f070003;
         /**  (For phones) Message in confirmation dialog informing user that
         they need to install Google Play services (from Play Store) [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_install_text_phone=0x7f070006;
+        public static final int common_google_play_services_install_text_phone=0x7f070001;
         /**  (For tablets) Message in confirmation dialog informing user that
         they need to install Google Play services (from Play Store) [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_install_text_tablet=0x7f070007;
+        public static final int common_google_play_services_install_text_tablet=0x7f070002;
         /**  Title of confirmation dialog informing user that they need to install
         Google Play services (from Play Store) [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_install_title=0x7f070005;
+        public static final int common_google_play_services_install_title=0x7f070000;
         /**  Message in confirmation dialog informing the user that they provided an invalid account. [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_invalid_account_text=0x7f070011;
+        public static final int common_google_play_services_invalid_account_text=0x7f07000c;
         /**  Title of confirmation dialog informing the user that they provided an invalid account. [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_invalid_account_title=0x7f070010;
-        /**   Title for notification shown when GooglePlayServices needs to be enabled for an
-        application to work. [CHAR LIMIT=70] 
-         */
-        public static final int common_google_play_services_needs_enabling_title=0x7f070003;
+        public static final int common_google_play_services_invalid_account_title=0x7f07000b;
         /**  Message in confirmation dialog informing the user that a network error occurred. [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_network_error_text=0x7f07000f;
+        public static final int common_google_play_services_network_error_text=0x7f07000a;
         /**  Title of confirmation dialog informing the user that a network error occurred. [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_network_error_title=0x7f07000e;
-        /**   Title for notification shown when GooglePlayServices needs to be installed
-        for an application to work. [CHAR LIMIT=70] 
-         */
-        public static final int common_google_play_services_notification_needs_installation_title=0x7f070001;
-        /**   Title for notification shown when GooglePlayServices needs to be updated for an
-        application to work. [CHAR LIMIT=70] 
-         */
-        public static final int common_google_play_services_notification_needs_update_title=0x7f070002;
-        /**   Title for notification shown when GooglePlayServices is unavailable [CHAR LIMIT=42] 
-         */
-        public static final int common_google_play_services_notification_ticker=0x7f070000;
+        public static final int common_google_play_services_network_error_title=0x7f070009;
         /**  Message in confirmation dialog informing user there is an unknown issue in Google Play
         services [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_unknown_issue=0x7f070012;
+        public static final int common_google_play_services_unknown_issue=0x7f07000d;
         /**  Message in confirmation dialog informing user that date on the device is not correct,
     causing certificate checks to fail. [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_unsupported_date_text=0x7f070015;
+        public static final int common_google_play_services_unsupported_date_text=0x7f070010;
         /**  Message in confirmation dialog informing user that Google Play services is not supported on their device [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_unsupported_text=0x7f070014;
+        public static final int common_google_play_services_unsupported_text=0x7f07000f;
         /**  Title of confirmation dialog informing user that Google Play services is not supported on their device [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_unsupported_title=0x7f070013;
+        public static final int common_google_play_services_unsupported_title=0x7f07000e;
         /**  Button in confirmation dialog for updating Google Play services [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_update_button=0x7f070016;
+        public static final int common_google_play_services_update_button=0x7f070011;
         /**  Message in confirmation dialog informing user that they need to update
         Google Play services (from Play Store) [CHAR LIMIT=NONE] 
          */
-        public static final int common_google_play_services_update_text=0x7f07000d;
+        public static final int common_google_play_services_update_text=0x7f070008;
         /**  Title of confirmation dialog informing user that they need to update
         Google Play services (from Play Store) [CHAR LIMIT=40] 
          */
-        public static final int common_google_play_services_update_title=0x7f07000c;
+        public static final int common_google_play_services_update_title=0x7f070007;
         /**  Sign-in button text [CHAR LIMIT=15] 
          */
-        public static final int common_signin_button_text=0x7f070017;
+        public static final int common_signin_button_text=0x7f070012;
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
-        public static final int common_signin_button_text_long=0x7f070018;
+        public static final int common_signin_button_text_long=0x7f070013;
         public static final int correct_n=0x7f070023;
         public static final int dro_text=0x7f070021;
         public static final int exam_desc_1=0x7f07002f;
@@ -1899,43 +1167,29 @@ containing a value of this type.
         public static final int report_wait=0x7f070040;
         public static final int signslist_name=0x7f07001c;
         public static final int test_cats_title=0x7f070032;
-        /**  Text on a placeholder buy button when Google Play services is not
-         available or up-to-date 
-         */
-        public static final int wallet_buy_button_place_holder=0x7f070019;
         public static final int yes_but=0x7f07003a;
     }
     public static final class style {
-        public static final int CustomTheme=0x7f050006;
-        public static final int CustomTheme2=0x7f050008;
-        public static final int CustomWindowTitleBackground=0x7f050005;
-        public static final int CustomWindowTitleBackground2=0x7f050007;
-        public static final int Theme_IAPTheme=0x7f050000;
-        public static final int WalletFragmentDefaultButtonTextAppearance=0x7f050003;
-        public static final int WalletFragmentDefaultDetailsHeaderTextAppearance=0x7f050002;
-        public static final int WalletFragmentDefaultDetailsTextAppearance=0x7f050001;
-        /** 
-         Default style of the wallet fragment that will be used if not set explicitly
-         when fragment is created
-    
-         */
-        public static final int WalletFragmentDefaultStyle=0x7f050004;
-        public static final int about_author_desc=0x7f050017;
-        public static final int about_email_desc=0x7f050018;
-        public static final int about_main_desc=0x7f050016;
-        public static final int inner_menu_item=0x7f050012;
-        public static final int largeiconimg=0x7f050015;
-        public static final int lawitem=0x7f050010;
-        public static final int mainbg=0x7f050009;
-        public static final int mainbutton=0x7f05000d;
-        public static final int mainroadimg=0x7f05000b;
-        public static final int maintitle=0x7f05000c;
-        public static final int roadbg=0x7f05000a;
-        public static final int signfulltitle=0x7f050011;
-        public static final int signlistitem=0x7f05000f;
-        public static final int test_menu_desc=0x7f050014;
-        public static final int test_menu_title=0x7f050013;
-        public static final int topexam=0x7f05000e;
+        public static final int CustomTheme=0x7f090001;
+        public static final int CustomTheme2=0x7f090003;
+        public static final int CustomWindowTitleBackground=0x7f090000;
+        public static final int CustomWindowTitleBackground2=0x7f090002;
+        public static final int about_author_desc=0x7f090012;
+        public static final int about_email_desc=0x7f090013;
+        public static final int about_main_desc=0x7f090011;
+        public static final int inner_menu_item=0x7f09000d;
+        public static final int largeiconimg=0x7f090010;
+        public static final int lawitem=0x7f09000b;
+        public static final int mainbg=0x7f090004;
+        public static final int mainbutton=0x7f090008;
+        public static final int mainroadimg=0x7f090006;
+        public static final int maintitle=0x7f090007;
+        public static final int roadbg=0x7f090005;
+        public static final int signfulltitle=0x7f09000c;
+        public static final int signlistitem=0x7f09000a;
+        public static final int test_menu_desc=0x7f09000f;
+        public static final int test_menu_title=0x7f09000e;
+        public static final int topexam=0x7f090009;
     }
     public static final class styleable {
         /** Attributes that can be used with a AdsAttrs.
@@ -2257,328 +1511,5 @@ containing a value of this type.
           @attr name com.gedevanishvili.driving:zOrderOnTop
         */
         public static final int MapAttrs_zOrderOnTop = 13;
-        /**  Attributes for the WalletFragment &lt;fragment&gt; tag 
-           <p>Includes the following attributes:</p>
-           <table>
-           <colgroup align="left" />
-           <colgroup align="left" />
-           <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_environment com.gedevanishvili.driving:environment}</code></td><td> Google Wallet environment to use </td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentMode com.gedevanishvili.driving:fragmentMode}</code></td><td> Fragment mode </td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_fragmentStyle com.gedevanishvili.driving:fragmentStyle}</code></td><td> A style resource specifing attributes to customize the look and feel of WalletFragment </td></tr>
-           <tr><td><code>{@link #WalletFragmentOptions_theme com.gedevanishvili.driving:theme}</code></td><td> Theme to be used for the Wallet selector </td></tr>
-           </table>
-           @see #WalletFragmentOptions_environment
-           @see #WalletFragmentOptions_fragmentMode
-           @see #WalletFragmentOptions_fragmentStyle
-           @see #WalletFragmentOptions_theme
-         */
-        public static final int[] WalletFragmentOptions = {
-            0x7f010011, 0x7f010012, 0x7f010013, 0x7f010014
-        };
-        /**
-          <p>
-          @attr description
-           Google Wallet environment to use 
-
-
-          <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>production</code></td><td>1</td><td></td></tr>
-<tr><td><code>sandbox</code></td><td>0</td><td></td></tr>
-<tr><td><code>strict_sandbox</code></td><td>2</td><td></td></tr>
-</table>
-          <p>This is a private symbol.
-          @attr name com.gedevanishvili.driving:environment
-        */
-        public static final int WalletFragmentOptions_environment = 1;
-        /**
-          <p>
-          @attr description
-           Fragment mode 
-
-
-          <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>buyButton</code></td><td>1</td><td></td></tr>
-<tr><td><code>selectionDetails</code></td><td>2</td><td></td></tr>
-</table>
-          <p>This is a private symbol.
-          @attr name com.gedevanishvili.driving:fragmentMode
-        */
-        public static final int WalletFragmentOptions_fragmentMode = 3;
-        /**
-          <p>
-          @attr description
-           A style resource specifing attributes to customize the look and feel of WalletFragment 
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
-          @attr name com.gedevanishvili.driving:fragmentStyle
-        */
-        public static final int WalletFragmentOptions_fragmentStyle = 2;
-        /**
-          <p>
-          @attr description
-           Theme to be used for the Wallet selector 
-
-
-          <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>holo_dark</code></td><td>0</td><td></td></tr>
-<tr><td><code>holo_light</code></td><td>1</td><td></td></tr>
-</table>
-          <p>This is a private symbol.
-          @attr name com.gedevanishvili.driving:theme
-        */
-        public static final int WalletFragmentOptions_theme = 0;
-        /**  Attributes that may be specified in a style resource to customize the look and feel of
-         WalletFragment 
-           <p>Includes the following attributes:</p>
-           <table>
-           <colgroup align="left" />
-           <colgroup align="left" />
-           <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonAppearance com.gedevanishvili.driving:buyButtonAppearance}</code></td><td> Appearance of the buy button.</td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonHeight com.gedevanishvili.driving:buyButtonHeight}</code></td><td> Height of the buy button.</td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonText com.gedevanishvili.driving:buyButtonText}</code></td><td> Text on the buy button.</td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_buyButtonWidth com.gedevanishvili.driving:buyButtonWidth}</code></td><td> Width of the buy button.</td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsBackground com.gedevanishvili.driving:maskedWalletDetailsBackground}</code></td><td> Masked wallet details background </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonBackground com.gedevanishvili.driving:maskedWalletDetailsButtonBackground}</code></td><td> "Change" button background in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance com.gedevanishvili.driving:maskedWalletDetailsButtonTextAppearance}</code></td><td> TextAppearance for the "Change" button in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance com.gedevanishvili.driving:maskedWalletDetailsHeaderTextAppearance}</code></td><td> TextAppearance for headers describing masked wallet details </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoImageType com.gedevanishvili.driving:maskedWalletDetailsLogoImageType}</code></td><td> Type of the wallet logo image in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsLogoTextColor com.gedevanishvili.driving:maskedWalletDetailsLogoTextColor}</code></td><td> Color of the Google Wallet logo text in masked wallet details view </td></tr>
-           <tr><td><code>{@link #WalletFragmentStyle_maskedWalletDetailsTextAppearance com.gedevanishvili.driving:maskedWalletDetailsTextAppearance}</code></td><td> TextAppearance for masked wallet details </td></tr>
-           </table>
-           @see #WalletFragmentStyle_buyButtonAppearance
-           @see #WalletFragmentStyle_buyButtonHeight
-           @see #WalletFragmentStyle_buyButtonText
-           @see #WalletFragmentStyle_buyButtonWidth
-           @see #WalletFragmentStyle_maskedWalletDetailsBackground
-           @see #WalletFragmentStyle_maskedWalletDetailsButtonBackground
-           @see #WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance
-           @see #WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance
-           @see #WalletFragmentStyle_maskedWalletDetailsLogoImageType
-           @see #WalletFragmentStyle_maskedWalletDetailsLogoTextColor
-           @see #WalletFragmentStyle_maskedWalletDetailsTextAppearance
-         */
-        public static final int[] WalletFragmentStyle = {
-            0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018,
-            0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c,
-            0x7f01001d, 0x7f01001e, 0x7f01001f
-        };
-        /**
-          <p>
-          @attr description
-           Appearance of the buy button. Must be one of "classic", "grayscale" and "monochrome" 
-
-
-          <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>classic</code></td><td>1</td><td></td></tr>
-<tr><td><code>grayscale</code></td><td>2</td><td></td></tr>
-<tr><td><code>monochrome</code></td><td>3</td><td></td></tr>
-</table>
-          <p>This is a private symbol.
-          @attr name com.gedevanishvili.driving:buyButtonAppearance
-        */
-        public static final int WalletFragmentStyle_buyButtonAppearance = 3;
-        /**
-          <p>
-          @attr description
-           Height of the buy button. This includes an 8dp padding (4dp on each side) used for
-             pressed and focused states of the button. The value can be a specific height, e.g.
-             "48dp", or special values "match_parent" and "wrap_content". 
-
-
-          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-<p>May be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
-<tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
-</table>
-          <p>This is a private symbol.
-          @attr name com.gedevanishvili.driving:buyButtonHeight
-        */
-        public static final int WalletFragmentStyle_buyButtonHeight = 0;
-        /**
-          <p>
-          @attr description
-           Text on the buy button. Must be one of "buy_with_google", "buy_now" and "book_now" 
-
-
-          <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>buy_with_google</code></td><td>1</td><td></td></tr>
-<tr><td><code>buy_now</code></td><td>2</td><td></td></tr>
-<tr><td><code>book_now</code></td><td>3</td><td></td></tr>
-</table>
-          <p>This is a private symbol.
-          @attr name com.gedevanishvili.driving:buyButtonText
-        */
-        public static final int WalletFragmentStyle_buyButtonText = 2;
-        /**
-          <p>
-          @attr description
-           Width of the buy button. This includes an 8dp padding (4dp on each side) used for
-             pressed and focused states of the button. The value can be a specific width, e.g.
-             "300dp", or special values "match_parent" and "wrap_content". 
-
-
-          <p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-<p>May be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>match_parent</code></td><td>-1</td><td></td></tr>
-<tr><td><code>wrap_content</code></td><td>-2</td><td></td></tr>
-</table>
-          <p>This is a private symbol.
-          @attr name com.gedevanishvili.driving:buyButtonWidth
-        */
-        public static final int WalletFragmentStyle_buyButtonWidth = 1;
-        /**
-          <p>
-          @attr description
-           Masked wallet details background 
-
-
-          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          <p>This is a private symbol.
-          @attr name com.gedevanishvili.driving:maskedWalletDetailsBackground
-        */
-        public static final int WalletFragmentStyle_maskedWalletDetailsBackground = 6;
-        /**
-          <p>
-          @attr description
-           "Change" button background in masked wallet details view 
-
-
-          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          <p>This is a private symbol.
-          @attr name com.gedevanishvili.driving:maskedWalletDetailsButtonBackground
-        */
-        public static final int WalletFragmentStyle_maskedWalletDetailsButtonBackground = 8;
-        /**
-          <p>
-          @attr description
-           TextAppearance for the "Change" button in masked wallet details view 
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
-          @attr name com.gedevanishvili.driving:maskedWalletDetailsButtonTextAppearance
-        */
-        public static final int WalletFragmentStyle_maskedWalletDetailsButtonTextAppearance = 7;
-        /**
-          <p>
-          @attr description
-           TextAppearance for headers describing masked wallet details 
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
-          @attr name com.gedevanishvili.driving:maskedWalletDetailsHeaderTextAppearance
-        */
-        public static final int WalletFragmentStyle_maskedWalletDetailsHeaderTextAppearance = 5;
-        /**
-          <p>
-          @attr description
-           Type of the wallet logo image in masked wallet details view 
-
-
-          <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>classic</code></td><td>1</td><td></td></tr>
-<tr><td><code>monochrome</code></td><td>2</td><td></td></tr>
-</table>
-          <p>This is a private symbol.
-          @attr name com.gedevanishvili.driving:maskedWalletDetailsLogoImageType
-        */
-        public static final int WalletFragmentStyle_maskedWalletDetailsLogoImageType = 10;
-        /**
-          <p>
-          @attr description
-           Color of the Google Wallet logo text in masked wallet details view 
-
-
-          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          <p>This is a private symbol.
-          @attr name com.gedevanishvili.driving:maskedWalletDetailsLogoTextColor
-        */
-        public static final int WalletFragmentStyle_maskedWalletDetailsLogoTextColor = 9;
-        /**
-          <p>
-          @attr description
-           TextAppearance for masked wallet details 
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          <p>This is a private symbol.
-          @attr name com.gedevanishvili.driving:maskedWalletDetailsTextAppearance
-        */
-        public static final int WalletFragmentStyle_maskedWalletDetailsTextAppearance = 4;
     };
 }

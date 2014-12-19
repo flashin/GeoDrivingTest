@@ -31,7 +31,7 @@
         <activity android:name="GeoDrivingExam"
                   android:label="@string/exam_name"
                   android:theme="@style/CustomTheme2"
-                  android:configChanges="orientation"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
                   android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.EXAM" />

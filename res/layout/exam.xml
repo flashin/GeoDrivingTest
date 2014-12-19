@@ -4,19 +4,19 @@
     style="@style/mainbg"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:scrollbars="horizontal|vertical"
     >
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
     android:id="@+id/top_bar"
     android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_weight="1"
     >
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
     android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -49,7 +49,7 @@
     android:text="(0/0)"
     />
 </RelativeLayout>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:layout_weight="1"
@@ -92,7 +92,7 @@
     />
 </RelativeLayout>
 </LinearLayout>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
     android:id="@+id/image_place"
     android:orientation="horizontal"
     android:layout_width="fill_parent"
@@ -101,12 +101,22 @@
     android:layout_gravity="center_vertical|center_horizontal"
     >
 </LinearLayout>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/buttons_place"
+<LinearLayout
+    android:id="@+id/question_place"
     android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_below="@id/image_place"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:padding="10sp"
+    >
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/buttons_place"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/question_place"
     android:layout_gravity="center_vertical|center_horizontal"
     android:paddingTop="5sp"
     >

@@ -10,6 +10,7 @@ import android.database.Cursor;
 import com.gedevanishvili.driving.db.DatabaseManager;
 import com.gedevanishvili.driving.db.SQLiteDBManager;
 import com.gedevanishvili.driving.modules.ExamQuestion;
+import com.gedevanishvili.driving.modules.MyAlert;
 
 /**
  * 
@@ -66,6 +67,7 @@ public class ExamTicketsDao {
 
 		Cursor cursor = dbManager.qin(query);
 		cnt = cursor.getCount();
+
 		if (cnt == 0) {
 			return null;
 		}
@@ -94,12 +96,12 @@ public class ExamTicketsDao {
 				+ "order by answer_n asc";
 
 		Cursor cursor = dbManager.qin(query);
-		cnt = cursor.getCount();
-		if (cnt == 0) {
+		int n = cursor.getCount();
+		if (n == 0) {
 			return null;
 		}
 
-		String[] answers = new String[cnt];
+		String[] answers = new String[n];
 		int i = 0;
 		while (cursor.moveToNext()) {
 			answers[i] = cursor.getString(0);

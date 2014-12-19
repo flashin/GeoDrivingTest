@@ -86,21 +86,35 @@ public class ExamManager {
         //remove old content from question image
         linearLayout.removeAllViews();
         
-        //create question image view and set its style
-        ImageView touch = new ImageView(context);
-        Bitmap bf = BitmapFactory.decodeResource(context.getResources(), Questions[q].getTicketImage(context));
-        float scalingFactor = this.getBitmapScalingFactor(bf);
-        int scaleHeight = (int) (bf.getHeight() * scalingFactor);
+        if (Questions[q].getType() != 3){
+	        //create question image view and set its style
+	        ImageView touch = new ImageView(context);
+	        Bitmap bf = BitmapFactory.decodeResource(context.getResources(), Questions[q].getTicketImage(context));
+	        float scalingFactor = this.getBitmapScalingFactor(bf);
+	        int scaleHeight = (int) (bf.getHeight() * scalingFactor);
+	        
+	        touch.setImageBitmap(bf);
+	        LinearLayout.LayoutParams imp = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, scaleHeight);
+	        touch.setLayoutParams(imp);
+	        
+	        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, scaleHeight);
+	        lp.addRule(RelativeLayout.BELOW, R.id.top_bar);
+	        linearLayout.setLayoutParams(lp);
+	        
+	        linearLayout.addView(touch);
+        }
         
-        touch.setImageBitmap(bf);
-        LinearLayout.LayoutParams imp = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, scaleHeight);
-        touch.setLayoutParams(imp);
+        //Add question
+        linearLayout = (LinearLayout)context.findViewById(R.id.question_place);
+        //remove old content from question text
+        linearLayout.removeAllViews();
         
-        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, scaleHeight);
-        lp.addRule(RelativeLayout.BELOW, R.id.top_bar);
-        linearLayout.setLayoutParams(lp);
-        
-        linearLayout.addView(touch);
+        TextView questionView = new TextView(context);
+        questionView.setTypeface(MyResource.getGeoFont(context));
+        questionView.setText(Questions[q].getQuestion());
+        questionView.setTextColor(Color.rgb(85, 116, 184));
+        questionView.setTextSize(15);
+        linearLayout.addView(questionView);
         
         //Check has user answered to question or not
         if (Questions[q].getUserAnswer() > 0){
@@ -118,24 +132,37 @@ public class ExamManager {
      * draw answer buttons
      */
     public void drawButtons(){
+        
+        //get answers quantity of the question
+        String[] answers = Questions[q].getAnswers();
+        int max_but = answers.length;
+        int but_style = LayoutParams.WRAP_CONTENT;
+        int layout_style = LinearLayout.HORIZONTAL;
+        for (int j = 0; j < max_but; j++){
+        	if (answers[j].length() > 3){
+        		but_style = LayoutParams.MATCH_PARENT;
+        		layout_style = LinearLayout.VERTICAL;
+        		break;
+        	}
+        }
         //get buttons place and remove its old content
         LinearLayout linearLayout = (LinearLayout)context.findViewById(R.id.buttons_place);
         linearLayout.removeAllViews();
         
         //set layout of buttons place
-        linearLayout.setOrientation(LinearLayout.HORIZONTAL);
+        linearLayout.setOrientation(layout_style);
         linearLayout.setPadding(0, to_pix(5), 0, to_pix(20));
         
-        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-        lp.addRule(RelativeLayout.BELOW, R.id.image_place);
+        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(but_style, LayoutParams.WRAP_CONTENT);
+        lp.addRule(RelativeLayout.BELOW, R.id.question_place);
         linearLayout.setLayoutParams(lp);
         
-        LinearLayout.LayoutParams ans_btn = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+        
+        LinearLayout.LayoutParams ans_btn = new LinearLayout.LayoutParams(but_style, LayoutParams.WRAP_CONTENT);
         ans_btn.leftMargin = to_pix(5);
         ans_btn.rightMargin = to_pix(5);
-        
-        //get answers quantity of the question
-        int max_but = Questions[q].getAnswerNums();
+        ans_btn.topMargin = to_pix(5);
+        ans_btn.bottomMargin = to_pix(5);
         
         //create buttons array of answers
         Button[] btns = new Button[max_but];
@@ -147,7 +174,9 @@ public class ExamManager {
             btns[j].setLayoutParams(ans_btn);
             btns[j].setTextColor(Color.rgb(255, 255, 255));
             btns[j].setTextSize(15);
-            btns[j].setText("" + (j+1));
+            btns[j].setTypeface(MyResource.getGeoFont(context));
+            btns[j].setText(answers[j]);
+            btns[j].setId(j + 1);
             btns[j].setOnClickListener(myhandler);
             
             //add button to buttons layout view
@@ -167,7 +196,7 @@ public class ExamManager {
         linearLayout.setOrientation(LinearLayout.VERTICAL);
         linearLayout.setPadding(0, to_pix(5), 0, to_pix(20));
         RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
-        rlp.addRule(RelativeLayout.BELOW, R.id.image_place);
+        rlp.addRule(RelativeLayout.BELOW, R.id.question_place);
         linearLayout.setLayoutParams(rlp);
         
         //if question exists
@@ -214,6 +243,21 @@ public class ExamManager {
             relativeLayout.addView(nextbut);
             
             linearLayout.addView(relativeLayout);
+            
+            //Show full answer            
+            TextView fullAnswerView = new TextView(context);
+            fullAnswerView.setTypeface(MyResource.getGeoFont(context));
+            
+            String[] answers = Questions[q].getAnswers();
+            int correctAnswer = Questions[q].getAnswer();
+            if (correctAnswer > 0 && correctAnswer <= answers.length){
+            	fullAnswerView.setText(answers[correctAnswer - 1]);
+            }
+            
+            fullAnswerView.setTextColor(Color.rgb(85, 116, 184));
+            fullAnswerView.setTextSize(15);
+            fullAnswerView.setPadding(10, 5, 10, 15);
+            linearLayout.addView(fullAnswerView);
             
             //create and customize button to show answer full description
             LinearLayout.LayoutParams desc_par = new LinearLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
@@ -291,8 +335,7 @@ public class ExamManager {
     View.OnClickListener myhandler = new View.OnClickListener() {
         @Override
 		public void onClick(View v) {
-            String but_label = ((Button)v).getText().toString();
-            int ans = Integer.parseInt(but_label);
+            int ans = ((Button)v).getId();
             
             Questions[q].setUserAnswer(ans);
             showAnswer();
@@ -469,7 +512,7 @@ public class ExamManager {
         textView.setTextColor(Color.rgb(171, 13, 19));
         
         RelativeLayout.LayoutParams tp = new RelativeLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
-        tp.addRule(RelativeLayout.BELOW, R.id.image_place);
+        tp.addRule(RelativeLayout.BELOW, R.id.question_place);
         successLayout.setLayoutParams(tp);
         
         successLayout.addView(textView);
